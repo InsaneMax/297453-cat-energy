@@ -8,9 +8,10 @@
   <header class="page-header">
     <div class="page-header__logo  logo">
       <a class="logo__link" href="index.html"><img src="#" alt=""></a>
-      <a class="logo__text" href="index.html"><span class="logo__highlighted">Cat<span> Energy</a>
+      <a class="logo__text" href="index.html"><b class="logo__highlighted">Cat</b> Energy</a>
     </div>
     <nav class="main-nav">
+      <button class="main-nav__toggle">Открыть меню</button>
       <ul class="main-nav__list  menu">
         <li class="menu__item"><a>Главная</a></li>
         <li class="menu__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -37,6 +38,7 @@
         <a class="shape__link"  href="#">КАТАЛОГ PRO</a>
       </div>
     </div>
+
     <section class="features">
       <h2 class="features__title">Как это работает</h2>
       <ul class="features__list">
@@ -54,6 +56,7 @@
         </li>
       </ul>
     </section>
+
     <section class="example">
       <div class="example__wrap">
         <h2 class="example__title">Живой пример</h2>
@@ -62,8 +65,8 @@
         </div>
         <div class="example__result">
           <ul class="example__weight-days">
-            <li class="example__item">5 кг</li>
-            <li class="example__item">60 дней</li>
+            <li class="example__item">5 кг <span class="example__sub-text">снижение веса</span></li>
+            <li class="example__item">60 дней <span class="example__sub-text">затрачено времени</span></li>
           </ul>
           <div class="example__money">затраты на питание: 15 000 руб.</div>
         </div>
@@ -71,9 +74,11 @@
       <div class="example__illustration">
         <img class="example__img" src="#" alt="">
         <div class="example__progress  progress">
-          было
-          <div class="progress__bar"></div>
-          стало
+          <span class="example__text-wrap">было</span>
+          <div class="progress__container">
+            <div class="progress__bar"></div>
+          </div>
+          <span class="example__text-wrap">стало</span>
         </div>
       </div>
     </section>
@@ -89,8 +94,7 @@
       <div class="contacts__map  map"></div>
     </div>
     <div class="page-footer__logo  logo">
-      <a class="logo__link" href="index.html"><img src="#" alt=""></a>
-      <a class="logo__text" href="index.html"></a>
+      <a class="logo__text" href="index.html"><b class="logo__highlighted">Cat</b> Energy</a>
     </div>
     <div class="social">
       <ul class="social__list">
