@@ -1,0 +1,39 @@
+body {
+  font-family: "Oswald", Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $white;
+  color: $font-color;
+}
+
+img,
+video,
+audio {
+  max-width: 100%;
+  height: auto;
+}
+
+label, 
+button, 
+input, 
+select { 
+  cursor: pointer; 
+}
+
+@mixin container() {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.visually-hidden { 
+  clip: rect(1px, 1px, 1px, 1px); 
+  height: 1px; 
+  overflow: hidden; 
+  position: absolute; 
+  white-space: nowrap; 
+  width: 1px; 
+}
+
+.debug {
+  border: 1px solid red;
+}
