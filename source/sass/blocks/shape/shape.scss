@@ -1,0 +1,22 @@
+.shape__card {
+  @include container();
+  background-color: $gray;
+  padding: 25px;
+}
+
+.shape__title {
+  font-size: 24px;
+  line-height: 40px;
+  color: $black;
+}
+
+.shape__link {
+  display: block;
+  border-top: 1px solid $black;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

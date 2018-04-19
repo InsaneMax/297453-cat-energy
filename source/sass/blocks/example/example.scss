@@ -1,0 +1,41 @@
+.example {
+  background-color: $gray;
+}
+
+.example__inner {
+  @include container();
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 60px;
+  color: $black;
+}
+
+.example__list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.example__item {
+
+  font-size: 24px;
+  line-height: 24px;
+  color: $black;
+}
+
+.example__sub-text {
+  font-size: 12px;
+  line-height: 12px;
+  color: $font-color;
+}
+
+.example__money {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}

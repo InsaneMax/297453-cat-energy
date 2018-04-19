@@ -1,0 +1,10 @@
+@mixin container {
+  width: 280px;
+  margin: 0 auto;
+  @media (min-with: $screen-md) {
+    width: 720px;
+  }
+  @media (min-with: $screen-lg) {
+    width: 950px;
+  }
+}

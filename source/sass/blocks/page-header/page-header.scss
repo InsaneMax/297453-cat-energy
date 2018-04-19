@@ -1,0 +1,23 @@
+.page-header {
+  min-height: 500px;
+  background-color: #65A93C;
+  background-image:url("../img/index-can-mobile@1x.png"),
+  url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 265px ,center top;
+}
+
+.page-header__inner {
+
+}
+
+.page-header__top {
+  background-color: #fff;
+}
+
+.page-header__menu-wrap {
+  @include container();
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
