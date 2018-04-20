@@ -1,7 +1,7 @@
 .promo {
   color: #fff;
   text-align: center;
-    @include container();
+  @include container();
 }
 
 .promo__title {

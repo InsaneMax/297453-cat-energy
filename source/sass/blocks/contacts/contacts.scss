@@ -3,11 +3,14 @@
 }
 
 .contacts__inner {
+  display: flex;
+  justify-content: space-between;
   @include container();
   padding: 35px 0;
 }
 
 .contacts__invite {
+  width: 50%;
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
@@ -16,6 +19,7 @@
 }
 
 .contacts__address {
+  width: 50%;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
