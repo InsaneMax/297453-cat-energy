@@ -24,6 +24,10 @@ select {
   cursor: pointer;
 }
 
+fieldset {
+  border: none;
+}
+
 @mixin container() {
   width: 280px;
   margin: 0 auto;

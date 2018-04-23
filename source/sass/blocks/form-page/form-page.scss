@@ -1,0 +1,19 @@
+.form-page {
+  @include container();
+
+}
+
+.form-page__title {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 36px;
+  line-height: 60px;
+  text-align: center;
+  color: $black;
+}
+
+.form-page__description {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+}

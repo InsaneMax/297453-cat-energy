@@ -1,0 +1,19 @@
+.form {
+  // @include container();
+}
+
+.form__data {
+  padding: 10px;
+}
+
+.form-comment {
+  padding: 10px 0;
+}
+
+.form__textarea {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
