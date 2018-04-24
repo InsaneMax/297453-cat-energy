@@ -1,6 +1,7 @@
 .promo {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
+
   @include container();
 }
 
@@ -9,7 +10,7 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 27px;
-  color: #fff;
+  color: #ffffff;
   font-weight: normal;
 }
 
@@ -19,5 +20,3 @@
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-
-
