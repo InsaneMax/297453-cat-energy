@@ -7,8 +7,8 @@
 }
 
 .example__title {
-  font-size: 36px;
-  line-height: 60px;
+  font-size: $font-xl;
+  line-height: $height-lg;
   color: $black;
 }
 
@@ -20,21 +20,20 @@
 }
 
 .example__item {
-
-  font-size: 24px;
-  line-height: 24px;
+  font-size: $font-lg;
+  line-height: 1em;
   color: $black;
 }
 
 .example__sub-text {
-  font-size: 12px;
-  line-height: 12px;
+  font-size: $font-xs;
+  line-height: 1em;
   color: $font-color;
 }
 
 .example__money {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: $font-base;
+  line-height: $height-md;
   text-transform: uppercase;
   text-align: center;
   color: $black;

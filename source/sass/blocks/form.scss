@@ -1,7 +1,3 @@
-.form {
-  // @include container();
-}
-
 .form__data {
   padding: 10px;
 }
@@ -12,13 +8,13 @@
 
 .form__textarea {
   padding: 10px;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: $font-base;
+  line-height: $height-base;
   text-transform: uppercase;
   box-sizing: border-box;
 }
 
 .form__subtitle {
-  font-size: 24px;
-  line-height: 24px;
+  font-size: $font-lg;
+  line-height: 1em;
 }

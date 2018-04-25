@@ -7,17 +7,16 @@
 }
 
 .contacts__inner {
+  @include container();
   display: flex;
   justify-content: space-between;
   padding: 35px 0;
-
-  @include container();
 }
 
 .contacts__invite {
   width: 50%;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: $font-sm;
+  line-height: $height-md;
   font-weight: bold;
   text-transform: uppercase;
   color: $black;
@@ -25,8 +24,8 @@
 
 .contacts__address {
   width: 50%;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: $font-base;
+  line-height: $height-md;
   text-transform: uppercase;
   color: $black;
 }
