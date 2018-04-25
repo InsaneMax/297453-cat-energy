@@ -1,0 +1,20 @@
+.form__data {
+  padding: 10px;
+}
+
+.form-comment {
+  padding: 10px 0;
+}
+
+.form__textarea {
+  padding: 10px;
+  font-size: $font-base;
+  line-height: $height-base;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.form__subtitle {
+  font-size: $font-lg;
+  line-height: 1em;
+}

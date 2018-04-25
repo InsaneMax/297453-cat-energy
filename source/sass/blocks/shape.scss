@@ -1,0 +1,55 @@
+.shape__card {
+  @include container();
+  background-color: $gray;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.shape__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 40px;
+  padding-left: 70px;
+  color: $black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -4px;
+    width: 50px;
+    height: 50px;
+    background-color: $main-color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 11px;
+    top: -5px;
+    width: 47px;
+    height: 47px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.shape__title--weight-gain::after {
+  background-image: url("../img/icon-cat-pro.svg");
+  left: -7px;
+  top: 6px;
+  width: 65px;
+  height: 65px;
+}
+
+.shape__link {
+  display: block;
+  border-top: 1px solid $black;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

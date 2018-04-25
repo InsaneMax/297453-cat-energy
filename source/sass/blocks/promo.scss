@@ -1,0 +1,22 @@
+.promo {
+  color: #ffffff;
+  text-align: center;
+
+  @include container();
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 27px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.promo__lead-text {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}

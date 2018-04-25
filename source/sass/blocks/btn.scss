@@ -1,0 +1,14 @@
+.btn {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $main-color;
+  color: #ffffff;
+  text-align: center;
+
+  &--default {
+    background-color: $gray;
+    color: #000000;
+  }
+}
