@@ -1,8 +1,7 @@
 .promo {
+  @include container();
   color: #ffffff;
   text-align: center;
-
-  @include container();
 }
 
 .promo__title {
@@ -19,4 +18,9 @@
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+
+.promo__btn--index-page {
+  position: relative;
+  bottom:-250px;
 }

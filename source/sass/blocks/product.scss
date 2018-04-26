@@ -55,10 +55,14 @@
   padding-bottom: 10px;
 }
 
+.product_img-wrap {
+  display: block;
+}
+
 .product__link {
   font-size: $font-sm;
   line-height: $height-md;
-  color: $black;
+  color: $dark-gray;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -66,7 +70,7 @@
 .product__more-link {
   font-size: $font-sm;
   line-height: $height-md;
-  color: $black;
+  color: $dark-gray;
   text-transform: uppercase;
   text-decoration: none;
 }

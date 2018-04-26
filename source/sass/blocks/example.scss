@@ -9,7 +9,7 @@
 .example__title {
   font-size: $font-xl;
   line-height: $height-lg;
-  color: $black;
+  color: $dark-gray;
 }
 
 .example__list {
@@ -22,7 +22,7 @@
 .example__item {
   font-size: $font-lg;
   line-height: 1em;
-  color: $black;
+  color: $dark-gray;
 }
 
 .example__sub-text {
@@ -36,5 +36,5 @@
   line-height: $height-md;
   text-transform: uppercase;
   text-align: center;
-  color: $black;
+  color: $dark-gray;
 }
