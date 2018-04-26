@@ -4,3 +4,37 @@
   margin: 0;
   list-style: none;
 }
+
+.menu__link {
+  display: block;
+  padding: 25px 0;
+  font-size: $font-md;
+  line-height: $height-md;
+  color: $dark-gray;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+@media (min-width: $screen-md) {
+  .menu {
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu__item--active {
+    border-bottom: 3px solid $main-color;
+  }
+
+  .menu__link {
+    padding: 15px 0;
+    font-size: 18px;
+    line-height: 24px;
+    color: $light-gray;
+    border: none;
+  }
+}

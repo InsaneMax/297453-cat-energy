@@ -30,3 +30,34 @@
     background-repeat: no-repeat;
   }
 }
+
+@media (min-width: $screen-md) {
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    padding: 120px 0;
+    width: 45%;
+
+    &::before {
+      left: 0;
+      top: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: $main-color;
+      background-image: url("../img/advantage-clock@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+  }
+
+  .features__text {
+    width: 255px;
+    font-size: $font-sm;
+    line-height: 24px;
+    color: $font-color;
+  }
+}

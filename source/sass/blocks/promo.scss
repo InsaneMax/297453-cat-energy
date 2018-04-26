@@ -24,3 +24,30 @@
   position: relative;
   bottom:-250px;
 }
+
+@media (min-width: $screen-md) {
+
+  .promo {
+    text-align: left;
+    color: $dark-gray;
+  }
+
+  .promo__title {
+    width: 427px;
+    font-size: 60px;
+    line-height: 1em;
+    color: $dark-gray;
+  }
+
+  .promo__lead-text {
+    font-size: $font-md;
+    line-height: 1em;
+  }
+
+  .promo__btn--index-page {
+    width: 246px;
+    position: relative;
+    bottom:-10px;
+    z-index: 12;
+  }
+}
