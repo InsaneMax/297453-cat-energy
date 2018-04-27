@@ -38,3 +38,20 @@
   text-align: center;
   color: $dark-gray;
 }
+
+@media (min-width: $screen-md) {
+
+  .example {
+    border-top: 1px solid #000;
+  }
+
+  .example__result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .example__illustration {
+    text-align: center;
+  }
+}

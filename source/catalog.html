@@ -8,27 +8,32 @@
 <body>
 
   <header class="page-header">
-    <div class="page-header__top">
-      <div class="page-header__wrap-top">
-        <div class="page-header__logo">
-          <a class="logo__link" href="index.html"><img src="img/logo-mobile.svg" width="200"  alt="Cat energy"></a>
-        </div>
-        <button class="page-header__toggle">Открыть меню</button>
-      </div>
-    </div>
+    <div class="page-header__inner">
 
-    <nav class="main-nav">
-      <ul class="main-nav__list  menu">
-        <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
-        <li class="menu__item"><a class="menu__link">Каталог продукции</a></li>
-        <li class="menu__item"><a class="menu__link" href="form.html">Подбор программы</a></li>
-      </ul>
-    </nav>
+      <div class="page-header__top">
+        <div class="page-header__wrap-top">
+          <div class="page-header__logo">
+            <a class="logo__link" href="index.html"><img src="img/logo-mobile.svg" width="200"  alt="Cat energy"></a>
+          </div>
+          <button class="page-header__toggle">Открыть меню</button>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list  menu">
+          <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+          <li class="menu__item  menu__item--active"><a class="menu__link">Каталог продукции</a></li>
+          <li class="menu__item"><a class="menu__link" href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="main-content">
     <section class="goods">
-      <h1 class="goods__title">Каталог продукции</h1>
+      <div class="goods__title-wrap">
+        <h1 class="goods__title">Каталог продукции</h1>
+      </div>
       <div class="goods__wrap">
 
         <article class="product">

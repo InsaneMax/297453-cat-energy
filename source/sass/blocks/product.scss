@@ -1,6 +1,6 @@
 .product {
   padding: 10px 0;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid #000;
 }
 
 .product--more {
@@ -27,7 +27,7 @@
 }
 
 .product__descr {
-  width: 45%;
+  width: 140px;
 }
 
 .product__title {
@@ -78,4 +78,22 @@
 .product__more-text {
   font-size: $font-xs;
   line-height: 16px;
+}
+
+@media (min-width: $screen-md) {
+
+  .product {
+
+    background-color: $gray;
+    width: 324px;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    border-bottom: none;
+  }
+
+  .product__inner {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+  }
 }
