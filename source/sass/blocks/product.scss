@@ -83,12 +83,21 @@
 @media (min-width: $screen-md) {
 
   .product {
-
     background-color: $gray;
     width: 324px;
     padding: 30px 0;
     margin-bottom: 15px;
     border-bottom: none;
+
+    &--more {
+      background-color: #ffffff;
+      border: 1px solid;
+
+      &::after {
+        top: 55px;
+        left: 136px;
+      }
+    }
   }
 
   .product__inner {
@@ -96,4 +105,29 @@
     width: 150px;
     margin: 0 auto;
   }
+
+  .product__title {
+    text-align: center;
+  }
+
+  .product__more-link {
+    display: block;
+    width: 135px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: $font-md;
+    line-height: 1em;
+  }
+
+  .product__more-text {
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    font-size: $font-sm;
+    line-height: 1em;
+    color: $font-color;
+  }
+
 }
