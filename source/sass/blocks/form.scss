@@ -1,3 +1,15 @@
+.form {
+  font-size: $font-sm;
+  line-height: $height-base;
+  color: $light-gray;
+}
+
+.form__description {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
 .form__data {
   padding: 10px;
 }
@@ -17,4 +29,53 @@
 .form__subtitle {
   font-size: $font-lg;
   line-height: 1em;
+}
+
+@media (min-width: $screen-md) {
+
+  .form__data,
+  .form__textarea,
+  .form__contacts,
+  .form__additions,
+  .form__comment {
+    padding: 0;
+  }
+
+  .form {
+    width: 630px;
+    margin: 0 auto;
+    font-size: $font-md;
+    line-height: 1em;
+  }
+
+  .form__description {
+    width: 350px;
+    font-size: $font-md;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .form__textarea {
+    width: 100%;
+}
+
+  .form__additions-wrap {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  .form__submit {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__submit span {
+    display: block;
+    width: 50%;
+  }
+
 }

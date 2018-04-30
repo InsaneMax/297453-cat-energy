@@ -11,8 +11,14 @@
   color: $dark-gray;
 }
 
-.form-page__description {
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 30px;
+
+@media (min-width: $screen-md) {
+
+  .form-page__title {
+    font-size: $height-lg;
+    line-height: 1em;
+    text-align: left;
+    color: $dark-gray;
+  }
+
 }
