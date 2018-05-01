@@ -38,3 +38,20 @@
     border: none;
   }
 }
+
+@media (min-width: $screen-lg) {
+
+  .menu {
+    width: 570px;
+    justify-content: flex-end;
+  }
+
+    .menu__item--active {
+    border-bottom: 3px solid #ffffff;
+  }
+
+  .menu__link {
+    padding: 15px 10px;
+    color: #ffffff;
+  }
+}

@@ -77,10 +77,40 @@
     background-image: none;
     background-color: #ffffff;
     margin-bottom: 325px;
+
     &::after {
-    bottom: -425px;
-    height: 650px;
-    background-size: 520px;
+      bottom: -425px;
+      height: 650px;
+      background-size: 520px;
     }
   }
+}
+
+@media (min-width: $screen-lg) {
+
+  .page-header__inner {
+    width: auto;
+    height: 700px;
+  }
+
+  .page-header__top {
+    width: 650px;
+  }
+
+  .page-header__top-container {
+    width: 570px;
+    margin: 0 auto;
+  }
+
+  .page-header__main {
+    position: absolute;
+    top: 100px;
+    left: 85px;
+    background-color: transparent;
+  }
+
+    .page-header__main::after {
+    bottom: -300px;
+    background-size: 400px;
+    }
 }

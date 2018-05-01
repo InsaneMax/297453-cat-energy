@@ -38,45 +38,49 @@
             Заполните анкету и мы подберем программу питания для вашего кота
           </p>
         </div>
-        <fieldset class="form__data">
-          <div class="field-text">
-            <label class="field-text__label" for="name">Имя:*</label>
-            <input class="field-text__input" type="text" name="name" id="name"  placeholder="Барсик">
-          </div>
-          <div class="field-text">
-            <label class="field-text__label" for="weight">Вес (кг):*</label>
-            <input class="field-text__input" type="number" name="weight" id="weight" placeholder="7">
-          </div>
-          <div class="field-text">
-            <label class="field-text__label" for="age">Возраст (лет):</label>
-            <input class="field-text__input" type="number" name="age" id="age" placeholder="7">
-          </div>
-        </fieldset>
+        <div class="form__data-container">
+          <fieldset class="form__data">
+            <div class="field-text">
+              <label class="field-text__label" for="name">Имя:*</label>
+              <input class="field-text__input" type="text" name="name" id="name"  placeholder="Барсик">
+            </div>
+            <div class="field-text">
+              <label class="field-text__label" for="weight">Вес (кг):*</label>
+              <input class="field-text__input" type="number" name="weight" id="weight" placeholder="7">
+            </div>
+            <div class="field-text">
+              <label class="field-text__label" for="age">Возраст (лет):</label>
+              <input class="field-text__input" type="number" name="age" id="age" placeholder="7">
+            </div>
+          </fieldset>
 
-        <fieldset class="form__data">
-          <div class="field-radio">
-            <input class="form__radio-input" type="radio" name="target"  id="minus-weight" checked>
-            <label class="form__radio-label" for="minus-weight">Похудение</label>
-          </div>
-          <div class="field-radio">
-            <input class="form__radio-input" type="radio" name="target"  id="plus-weight">
-            <label class="form__radio-label" for="plus-weight">Набор массы</label>
-          </div>
-          <div class="field-radio">
-            <input class="form__radio-input" type="radio" name="target"  id="advise">
-            <label class="form__radio-label" for="advise">Не знаю (нужен ваш совет)</label>
-          </div>
-        </fieldset>
+          <fieldset class="form__data">
+            <div class="field-radio">
+              <input class="form__radio-input" type="radio" name="target"  id="minus-weight" checked>
+              <label class="form__radio-label" for="minus-weight">Похудение</label>
+            </div>
+            <div class="field-radio">
+              <input class="form__radio-input" type="radio" name="target"  id="plus-weight">
+              <label class="form__radio-label" for="plus-weight">Набор массы</label>
+            </div>
+            <div class="field-radio">
+              <input class="form__radio-input" type="radio" name="target"  id="advise">
+              <label class="form__radio-label" for="advise">Не знаю (нужен ваш совет)</label>
+            </div>
+          </fieldset>
+        </div>
 
         <fieldset class="form__contacts">
           <h2 class="form__subtitle">Контактные данные(владельца кота)</h2>
-          <div class="field-text">
-            <label class="field-text__label" for="email">E-MAIL:*</label>
-            <input class="field-text__input" class="form__email-input" type="email" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
-          </div>
-          <div class="field-text">
-            <label class="field-text__label" for="tel">Телефон:*</label>
-            <input class="field-text__input" class="form__tel-input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+          <div class="form__contacts-wrap">
+            <div class="field-text">
+              <label class="field-text__label" for="email">E-MAIL:*</label>
+              <input class="field-text__input" class="form__email-input" type="email" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
+            </div>
+            <div class="field-text">
+              <label class="field-text__label" for="tel">Телефон:*</label>
+              <input class="field-text__input" class="form__tel-input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+            </div>
           </div>
         </fieldset>
 
@@ -112,7 +116,7 @@
 
         <div class="form__submit">
           <button class="form__submit-btn  btn">Отправить заявку</button>
-          <span>* &mdash; Обязательные поля</span>
+          <span class="form__submit-tip">* &mdash; Обязательные поля</span>
         </div>
       </form>
     </section>

@@ -3,3 +3,9 @@
     width: 50%;
   }
 }
+
+@media (min-width: $screen-lg) {
+  .field-checkbox {
+    width: auto;
+  }
+}

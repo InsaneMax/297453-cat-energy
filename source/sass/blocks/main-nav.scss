@@ -1,3 +1,13 @@
-.main-nav {
+@media (min-width: $screen-lg) {
+
+  .main-nav {
+    width: 720px;
+    background-color: $main-color;
+  }
+
+  // .main-nav__list {
+  //   width: 570px;
+  // }
 
 }
+
