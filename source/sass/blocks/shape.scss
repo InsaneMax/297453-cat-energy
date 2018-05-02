@@ -1,8 +1,13 @@
 .shape__card {
   @include container();
   background-color: $gray;
-  padding: 25px;
+  padding: 20px 20px 0 20px;
   margin-bottom: 20px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: 5px;
+  }
 }
 
 .shape__title {
@@ -10,12 +15,13 @@
   font-size: 24px;
   line-height: 40px;
   padding-left: 70px;
+  margin: 0;
   color: $dark-gray;
 
   &::before {
     content: "";
     position: absolute;
-    right: 230px;
+    right: 185px;
     top: -4px;
     width: 50px;
     height: 50px;
@@ -26,7 +32,7 @@
   &::after {
     content: "";
     position: absolute;
-    right: 230px;
+    right: 180px;
     top: -5px;
     width: 47px;
     height: 47px;
@@ -37,21 +43,38 @@
 
 .shape__title--weight-gain::after {
   background-image: url("../img/icon-cat-pro.svg");
-  right: 225px;
+  right: 180px;
   top: 6px;
   width: 65px;
   height: 65px;
 }
 
+.shape__descr {
+  margin: 25px 0;
+}
+
 .shape__link {
+  position: relative;
   display: block;
   border-top: 1px solid $dark-gray;
-  padding: 10px 0;
+  padding: 21px 0;
   font-size: 16px;
   line-height: 16px;
   color: $dark-gray;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 95px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 @media (min-width: $screen-md) {
