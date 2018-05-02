@@ -139,7 +139,13 @@
 
   .product {
     width: 245px;
+    margin-right: 60px;
   }
+
+  .product--more {
+    margin-right: 0;
+  }
+
   .product__inner {
     width: 170px;
   }

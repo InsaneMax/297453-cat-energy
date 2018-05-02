@@ -91,3 +91,42 @@
     border: none;
   }
 }
+
+@media (min-width: $screen-lg) {
+
+  .shape {
+    display: flex;
+  }
+
+  .shape__card {
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+    .shape__title {
+    font-size: $font-xl;
+    line-height: 1em;
+    padding-left: 100px;
+
+    &::before {
+      left: 15px;
+      top: -12px;
+      width: 60px;
+      height: 60px;
+    }
+
+    &::after {
+      left: 26px;
+      top: -18px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+    .shape__title--weight-gain::after {
+      left: 5px;
+      top: 5px;
+      width: 75px;
+      height: 75px;
+  }
+}

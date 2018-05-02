@@ -47,11 +47,24 @@
 
   .example__result {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    // justify-content: space-between;
     align-items: center;
+  }
+
+  .example__list {
+    display: flex;
+    width: 354px;
+    justify-content: space-between;
   }
 
   .example__illustration {
     text-align: center;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .example__wrap {
+    width: 500px;
   }
 }

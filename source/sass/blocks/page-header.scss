@@ -88,6 +88,10 @@
 
 @media (min-width: $screen-lg) {
 
+  .page-header--index {
+    margin-bottom: 50px;
+  }
+
   .page-header--index .page-header__inner{
     width: auto;
     height: 700px;
@@ -98,7 +102,7 @@
   }
 
   .page-header__top-container {
-    width: 570px;
+    width: 470px;
     margin: 0 auto;
   }
 
