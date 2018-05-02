@@ -41,16 +41,16 @@
 
 @media (min-width: $screen-lg) {
 
-  .menu {
+    .page-header--index .menu {
     width: 570px;
     justify-content: flex-end;
   }
 
-    .menu__item--active {
+     .page-header__--index .menu__item--active {
     border-bottom: 3px solid #ffffff;
   }
 
-  .menu__link {
+    .page-header--index .menu__link {
     padding: 15px 10px;
     color: #ffffff;
   }

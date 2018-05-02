@@ -88,12 +88,12 @@
 
 @media (min-width: $screen-lg) {
 
-  .page-header__inner {
+  .page-header--index .page-header__inner{
     width: auto;
     height: 700px;
   }
 
-  .page-header__top {
+   .page-header__top {
     width: 650px;
   }
 
