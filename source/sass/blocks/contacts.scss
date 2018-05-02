@@ -1,9 +1,9 @@
 .contacts {
   background-color: $gray;
-}
 
-.contacts--index {
-  background-color: #ffffff;
+  &--index {
+    background-color: #ffffff;
+  }
 }
 
 .contacts__inner {

@@ -31,10 +31,10 @@
   line-height: 1em;
 }
 
-  .form__submit-tip {
-    font-size: $font-base;
-    line-height: 16px;
-    color: $font-color;
+.form__submit-tip {
+  font-size: $font-base;
+  line-height: 16px;
+  color: $font-color;
   }
 
 
@@ -75,7 +75,6 @@
     display: flex;
     min-height: 70px;
     justify-content: space-between;
-    align-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 60px;
   }
