@@ -1,3 +1,15 @@
+.form {
+  font-size: $font-sm;
+  line-height: $height-base;
+  color: $light-gray;
+}
+
+.form__description {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
 .form__data {
   padding: 10px;
 }
@@ -17,4 +29,101 @@
 .form__subtitle {
   font-size: $font-lg;
   line-height: 1em;
+}
+
+.form__submit-tip {
+  font-size: $font-base;
+  line-height: 16px;
+  color: $font-color;
+  }
+
+
+@media (min-width: $screen-md) {
+
+  .form__data,
+  .form__textarea,
+  .form__contacts,
+  .form__additions,
+  .form__comment {
+    padding: 0;
+  }
+
+  .form {
+    width: 630px;
+    margin: 0 auto;
+    font-size: $font-md;
+    line-height: 1em;
+  }
+
+  .form__subtitle {
+  font-size: $font-xl;
+  line-height: 1em;
+}
+
+  .form__description {
+    width: 350px;
+    font-size: $font-md;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .form__textarea {
+    width: 100%;
+}
+
+  .form__additions-wrap {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+  }
+
+  .form__submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form__submit-tip {
+    display: block;
+    width: 50%;
+    font-size: $font-sm;
+    line-height: 16px;
+  }
+
+  .form__data-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media (min-width: $screen-lg) {
+
+  .form {
+    width: auto;
+  }
+
+  .form__data-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form__data {
+    width: 570px;
+  }
+
+  .form__contacts-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__submit-btn {
+    width: 570px;
+  }
+
+  .form__submit-tip {
+
+  }
 }

@@ -1,6 +1,6 @@
 .product {
   padding: 10px 0;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid #000;
 }
 
 .product--more {
@@ -12,10 +12,12 @@
     content: "";
     position: absolute;
     top: 20px;
-    left: 45%;
-    width: 50px;
+    left: 0;
+    width: 100%;
     height: 50px;
     background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position:  center;
   }
 }
 
@@ -24,10 +26,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.product__descr {
-  width: 45%;
 }
 
 .product__title {
@@ -55,10 +53,14 @@
   padding-bottom: 10px;
 }
 
+.product_img-wrap {
+  display: block;
+}
+
 .product__link {
   font-size: $font-sm;
   line-height: $height-md;
-  color: $black;
+  color: $dark-gray;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -66,7 +68,7 @@
 .product__more-link {
   font-size: $font-sm;
   line-height: $height-md;
-  color: $black;
+  color: $dark-gray;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -74,4 +76,81 @@
 .product__more-text {
   font-size: $font-xs;
   line-height: 16px;
+}
+
+@media (min-width: $screen-md) {
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $gray;
+    width: 324px;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    border-bottom: none;
+
+    &--more {
+      background-color: #ffffff;
+      border: 1px solid;
+
+      &::after {
+        top: 55px;
+      }
+    }
+  }
+
+  .product__inner {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+  }
+
+  .product__title {
+    text-align: center;
+  }
+
+  .product__more-link {
+    display: block;
+    width: 135px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: $font-md;
+    line-height: 1em;
+  }
+
+  .product__more-text {
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: $font-sm;
+    line-height: 1em;
+    color: $font-color;
+  }
+
+    .product__btn {
+      width: 245px;
+    }
+
+}
+
+@media (min-width: $screen-lg) {
+
+  .product {
+    width: 245px;
+    margin-right: 60px;
+  }
+
+  .product--more {
+    margin-right: 0;
+  }
+
+  .product__inner {
+    width: 170px;
+  }
+
+  .product__btn {
+    width: 175px;
+  }
 }

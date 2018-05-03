@@ -8,3 +8,20 @@
 .field-text__input {
   padding: 10px;
 }
+
+@media (min-width: $screen-md) {
+
+  .field-text__input {
+    flex-grow: 1;
+  }
+
+  .field-text__label {
+    margin-right: 25px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .field-text {
+    width: 570px;
+  }
+}

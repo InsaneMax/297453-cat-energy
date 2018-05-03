@@ -34,3 +34,10 @@
     background-size: 13px;
   }
 }
+
+@media (min-width: $screen-md) {
+
+  .socials__list {
+    border: none;
+  }
+}

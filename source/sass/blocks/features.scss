@@ -1,11 +1,14 @@
 .features {
   @include container();
+  margin-bottom: 50px;
 }
 
 .features__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: $font-xl;
   line-height: $height-lg;
-  color: $black;
+  color: $dark-gray;
 }
 
 .features__list {
@@ -15,18 +18,69 @@
 }
 
 .features__item {
-  padding-left: 60px;
+  padding-left: 80px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
     left: 0;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background-color: $main-color;
-    background-image: url("../img/advantage-clock@1x.png");
+    background-image: url("../img/advantage-leaf@1x.png");
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--substitute::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--fast::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
+}
+
+@media (min-width: $screen-md) {
+
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .features__item {
+    padding: 120px 0;
+    width: 45%;
+
+    &::before {
+      left: 0;
+      top: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: $main-color;
+      background-image: url("../img/advantage-clock@1x.png");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .features__text {
+    width: 225px;
+    font-size: $font-sm;
+    line-height: 24px;
+    color: $font-color;
+  }
+}
+
+@media (min-width: $screen-lg) {
+    .features__item {
+      width: 245px;
+    }
 }

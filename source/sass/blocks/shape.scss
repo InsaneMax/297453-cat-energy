@@ -1,8 +1,13 @@
 .shape__card {
   @include container();
   background-color: $gray;
-  padding: 25px;
+  padding: 20px 20px 0 20px;
   margin-bottom: 20px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: 5px;
+  }
 }
 
 .shape__title {
@@ -10,12 +15,13 @@
   font-size: 24px;
   line-height: 40px;
   padding-left: 70px;
-  color: $black;
+  margin: 0;
+  color: $dark-gray;
 
   &::before {
     content: "";
     position: absolute;
-    left: 0;
+    right: 185px;
     top: -4px;
     width: 50px;
     height: 50px;
@@ -26,7 +32,7 @@
   &::after {
     content: "";
     position: absolute;
-    left: 11px;
+    right: 180px;
     top: -5px;
     width: 47px;
     height: 47px;
@@ -37,19 +43,113 @@
 
 .shape__title--weight-gain::after {
   background-image: url("../img/icon-cat-pro.svg");
-  left: -7px;
+  right: 180px;
   top: 6px;
   width: 65px;
   height: 65px;
 }
 
+.shape__descr {
+  margin: 25px 0;
+}
+
 .shape__link {
+  position: relative;
   display: block;
-  border-top: 1px solid $black;
-  padding: 10px 0;
+  border-top: 1px solid $dark-gray;
+  padding: 21px 0;
   font-size: 16px;
   line-height: 16px;
-  color: $black;
+  color: $dark-gray;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 95px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media (min-width: $screen-md) {
+
+  .shape__title {
+    font-size: $font-xl;
+    line-height: 1em;
+    padding: 0;
+
+    &::before {
+      right: 15px;
+      top: 0;
+      width: 150px;
+      height: 150px;
+    }
+
+    &::after {
+      right: 15px;
+      top: 0;
+      width: 145px;
+      height: 145px;
+    }
+  }
+
+  .shape__title--weight-gain::after {
+      right: 0;
+      top: 35px;
+      width: 200px;
+      height: 200px;
+}
+
+  .shape__descr {
+    width: 385px;
+  }
+
+  .shape__link {
+    border: none;
+  }
+}
+
+@media (min-width: $screen-lg) {
+
+  .shape {
+    display: flex;
+  }
+
+  .shape__card {
+    width: 570px;
+    box-sizing: border-box;
+  }
+
+    .shape__title {
+    font-size: $font-xl;
+    line-height: 1em;
+    padding-left: 100px;
+
+    &::before {
+      left: 15px;
+      top: -12px;
+      width: 60px;
+      height: 60px;
+    }
+
+    &::after {
+      left: 26px;
+      top: -18px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+    .shape__title--weight-gain::after {
+      left: 5px;
+      top: 5px;
+      width: 75px;
+      height: 75px;
+  }
 }

@@ -1,9 +1,40 @@
 .goods__title {
   margin: 0;
   padding: 10px 0;
-  border-bottom: 1px solid $gray;
   font-size: 36px;
   line-height: 60px;
   text-align: center;
-  color: $black;
+  color: $dark-gray;
+}
+
+.goods__wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods__title-wrap {
+  @include container();
+}
+
+@media (min-width: $screen-md) {
+
+  .goods__title {
+    font-size: $height-lg;
+    line-height: 1em;
+    text-align: left;
+  }
+
+  .goods__wrap {
+    @include container();
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $screen-lg) {
+
+  .goods__wrap {
+    justify-content: flex-start;
+  }
 }

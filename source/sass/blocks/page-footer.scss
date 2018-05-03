@@ -4,4 +4,14 @@
 
 .page-footer__inner {
   @include container();
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $screen-md) {
+
+  .page-footer__inner {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }

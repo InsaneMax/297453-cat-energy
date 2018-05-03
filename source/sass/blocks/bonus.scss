@@ -12,3 +12,10 @@
   line-height: $height-md;
   text-align: center;
 }
+
+@media (min-width: $screen-lg) {
+
+  .bonus {
+    width: 245px;
+  }
+}

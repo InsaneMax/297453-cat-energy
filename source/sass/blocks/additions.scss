@@ -14,3 +14,58 @@
   margin-bottom: 20px;
   border-bottom: 1px solid $gray;
 }
+
+.additions__name {
+  margin: 0;
+}
+
+@media (min-width: $screen-md) {
+
+  .additions__title {
+    font-size: $font-xl;
+    line-height: 1em;
+    color: $dark-gray;
+    margin-bottom: 40px;
+    padding-bottom: 60px;
+  }
+
+  .additions__product {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+
+  .additions__product-wrap {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+  }
+
+  .additions__btn {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+
+  .additions {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .additions__title {
+    width: 100%;
+  }
+
+  .additions__product {
+    width: 845px;
+  }
+
+  .additions__btn {
+    width: 245px;
+    margin: 0;
+  }
+}
