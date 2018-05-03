@@ -15,7 +15,7 @@
 }
 
 .example__text-wrap {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .example__text-wrap p {
@@ -71,6 +71,10 @@
 
 .example__img {
   margin-bottom: 20px;
+}
+
+.example__progress {
+  padding: 20px 0;
 }
 
 @media (min-width: $screen-md) {

@@ -74,14 +74,17 @@
   }
 
   .page-header__main {
+    width: 616px;
+    margin: 0 auto;
     background-image: none;
     background-color: #ffffff;
-    margin-bottom: 325px;
+    margin-bottom: 450px;
 
     &::after {
-      bottom: -425px;
+      bottom: -500px;
       height: 650px;
-      background-size: 520px;
+      background-size: 610px;
+      background-position: left;
     }
   }
 }
