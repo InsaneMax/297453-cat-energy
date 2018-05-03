@@ -98,7 +98,7 @@
   }
 
    .page-header__top {
-    width: 650px;
+    width: 50%;
   }
 
   .page-header__top-container {
@@ -115,6 +115,7 @@
 
     .page-header__main::after {
     bottom: -300px;
+    right: -145px;
     background-size: 400px;
     }
 }
