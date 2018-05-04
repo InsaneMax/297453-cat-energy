@@ -54,3 +54,10 @@
     z-index: 12;
   }
 }
+
+@media (min-width: $screen-lg) {
+
+  .promo {
+    // margin-left: 145px;
+  }
+}

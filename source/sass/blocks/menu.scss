@@ -20,10 +20,8 @@
 
 @media (min-width: $screen-md) {
   .menu {
-
     width: 470px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
@@ -41,7 +39,7 @@
   }
 
   .menu__link {
-    padding: 15px 0;
+    padding: 15px 10px;
     font-size: 18px;
     line-height: 24px;
     color: $light-gray;
@@ -52,8 +50,8 @@
 @media (min-width: $screen-lg) {
 
   .page-header--index .menu {
-    width: 560px;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-left: 140px;
   }
 
   .page-header--index .menu__item--active::before {

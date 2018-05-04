@@ -20,13 +20,25 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $dark-gray;
+  flex-shrink: 0
 }
 
 .contacts__address {
   width: 50%;
   font-size: $font-base;
   line-height: $height-md;
-  text-transform: uppercase;
-  color: $dark-gray;
-  text-align: right;
+  color: $font-color;
+  text-align: left;
+  margin-left: 28px;
+}
+
+@media (min-width: $screen-md) {
+
+  .contacts__inner {
+    width: 630px;
+  }
+
+  .contacts__address {
+    text-align: right;
+  }
 }
