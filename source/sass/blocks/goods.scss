@@ -1,6 +1,6 @@
 .goods__title {
   margin: 0;
-  padding: 10px 0;
+  padding: 22px 0;
   font-size: 36px;
   line-height: 60px;
   text-align: center;
@@ -13,7 +13,7 @@
 }
 
 .goods__title-wrap {
-  @include container();
+  border-bottom: 1px solid #000;
 }
 
 @media (min-width: $screen-md) {
@@ -22,6 +22,12 @@
     font-size: $height-lg;
     line-height: 1em;
     text-align: left;
+  }
+
+  .goods__title-wrap {
+    @include container();
+    margin-bottom: 40px;
+    border: none;
   }
 
   .goods__wrap {

@@ -20,9 +20,15 @@
 
 @media (min-width: $screen-md) {
   .menu {
-    width: 470px;
+    width: 516px;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+  }
+
+  .menu__item {
+    margin-left: 40px;
+
   }
 
   .menu__item--active {
@@ -39,11 +45,15 @@
   }
 
   .menu__link {
-    padding: 15px 10px;
+    padding: 18px 0 15px 0;
     font-size: 18px;
     line-height: 24px;
     color: $light-gray;
     border: none;
+
+    // &:last-child {
+    //   margin-right: 0;
+    // }
   }
 }
 
@@ -51,15 +61,15 @@
 
   .page-header--index .menu {
     flex-wrap: wrap;
-    margin-left: 140px;
+    margin-left:  88px;
   }
 
   .page-header--index .menu__item--active::before {
-      background-color: #ffffff;
+    background-color: #ffffff;
   }
 
   .page-header--index .menu__link {
-    padding: 15px 10px;
+    // padding: 15px 10px;
     color: #ffffff;
   }
 }

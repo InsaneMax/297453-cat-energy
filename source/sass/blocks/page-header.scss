@@ -55,6 +55,10 @@
 
 @media (min-width: $screen-md) {
 
+  .page-header {
+    margin-bottom: 40px;
+  }
+
   .page-header__inner {
     @include container();
     display: flex;
@@ -100,23 +104,23 @@
   .page-header--index .page-header__inner {
     justify-content: center;
     width: auto;
-    height: 300px;
+    height: 700px;
   }
 
    .page-header__top {
-    width: 720px;
+    width: 680px;
     flex-shrink: 0;
   }
 
   .page-header__top-container {
-    width: 610px;
-    margin-left: 110px;
+    width: 540px;
+    margin-left: 70px;
   }
 
   .page-header__main {
-    position: relative;
-    bottom: 125px;
-    right: 257px;
+    position: absolute;
+    top: 133px;
+    left: 102px;
     background-color: transparent;
     margin-bottom: 0;
   }
