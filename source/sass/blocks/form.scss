@@ -8,10 +8,21 @@
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 30px;
+  font-size: $font-base;
+  line-height: $height-base;
 }
 
 .form__data {
   padding: 10px;
+}
+
+.form__data-wrap {
+  @include container();
+}
+
+.form__data--radio {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .form-comment {

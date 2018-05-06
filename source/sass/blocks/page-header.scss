@@ -123,11 +123,12 @@
     left: 102px;
     background-color: transparent;
     margin-bottom: 0;
-  }
 
-    .page-header__main::after {
-    bottom: -155px;
-    right: -455px;
-    background-size: 400px;
+    &::after {
+      height: 500px;
+      bottom: -155px;
+      right: -455px;
+      background-size: 400px;
     }
+  }
 }

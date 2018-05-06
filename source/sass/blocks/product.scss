@@ -7,6 +7,7 @@
   position: relative;
   text-align: center;
   padding-top: 90px;
+  box-sizing: border-box;
 
   &::after {
     content: "";
@@ -160,8 +161,16 @@
 
   .product {
     width: 245px;
-    margin-right: 60px;
+    margin-right: 80px;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    }
   }
+
+  .product__descr {
+    width: 170px;
+}
 
   .product--more {
     margin-right: 0;

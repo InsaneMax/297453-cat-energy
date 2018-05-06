@@ -2,14 +2,19 @@
   @include container();
 }
 
+.additions__wrap {
+  margin-bottom: 40px;
+}
+
 .additions__title {
   position: relative;
   margin: 0;
   padding: 0;
   padding: 30px 0;
-  border-bottom: 1px solid;
+  // border-bottom: 1px solid;
   font-size: $font-lg;
   line-height: 1em;
+  color: $dark-gray;
 
   &::after {
     content: "";
@@ -24,26 +29,42 @@
 
 .additions__product {
   padding: 10px 0;
-  margin-bottom: 20px;
-  border-bottom: 1px solid $gray;
+  // margin-bottom: 20px;
+  border-bottom: 1px solid #000;
+
+  &:first-child {
+  border-top: 1px solid #000;
+  }
+
 }
 
   .additions__product-wrap {
     display: flex;
     justify-content: space-between;
+    font-size: $font-base;
+    line-height: 1em;
   }
 
 .additions__name {
+  font-size: $font-sm;
+  line-height: 1em;
+  color: $light-gray;
+  text-transform: uppercase;
   margin: 0;
 }
 
 @media (min-width: $screen-md) {
+
+  .additions__wrap {
+    margin-bottom: 80px;
+}
 
   .additions__title {
     font-size: $font-xl;
     line-height: 1em;
     color: $dark-gray;
     margin-bottom: 40px;
+    margin-left: 40px;
     padding-bottom: 60px;
 
     &::before {
@@ -63,15 +84,27 @@
   }
 
   .additions__product {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px 0;
+      padding: 20px 0;
   }
+
+.additions__inner {
+  display: flex;
+  width: 635px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.additions__name {
+  font-size: $font-md;
+  width: 200px;
+}
 
   .additions__product-wrap {
     min-width: 288px;
     justify-content: space-between;
+    font-size: $font-sm;
+    line-height: $height-md;
   }
 
   .additions__quantity {
@@ -96,18 +129,39 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 80px;
   }
+
+    .additions__wrap {
+    margin: 0;
+}
 
   .additions__title {
     width: 100%;
+    margin: 0;
+
+    &::before {
+      left: -635px;
+    }
   }
 
   .additions__product {
     width: 845px;
   }
 
+.additions__inner {
+  width: 845px;
+  align-items: center;
+  margin: 0;
+}
+
   .additions__btn {
     width: 245px;
     margin: 0;
   }
+
+  .additions__quantity {
+    text-align: left;
+  }
+
 }
