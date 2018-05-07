@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 
   &--contacts {
     position: relative;
@@ -53,6 +53,11 @@
 
 @media (min-width: $screen-md) {
 
+  .field-text--contacts::before {
+    top: 11px;
+    right: 15px;
+  }
+
   .field-text__input {
     flex-grow: 1;
     font-size: $font-md;
@@ -67,9 +72,9 @@
 @media (min-width: $screen-lg) {
   .field-text {
     width: 570px;
-  }
 
-  &:last-child {
-    // margin-bottom: 0; магия!
+    &:last-child {
+    margin-bottom: 0;
+  }
   }
 }
