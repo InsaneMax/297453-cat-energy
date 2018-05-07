@@ -1,5 +1,5 @@
 .form-page {
-  @include container();
+  // @include container();
 }
 
 .form-page__title {
@@ -15,6 +15,7 @@
 @media (min-width: $screen-md) {
 
   .form-page__title {
+    @include container();
     font-size: $height-lg;
     line-height: 1em;
     text-align: left;

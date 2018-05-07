@@ -134,6 +134,7 @@
   .shape {
     @include container();
     display: flex;
+    justify-content: space-between;
     margin-bottom: 80px;
   }
 
@@ -141,6 +142,7 @@
     width: 570px;
     box-sizing: border-box;
     margin-bottom: 0;
+    margin: 0;
 
     &:last-child {
       margin-bottom: 0;

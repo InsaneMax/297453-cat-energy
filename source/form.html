@@ -40,7 +40,7 @@
           </p>
         </div>
         <div class="form__data-container">
-          <fieldset class="form__data">
+          <fieldset class="form__data  form__data--text">
             <div class="field-text">
               <label class="field-text__label" for="name">Имя:*</label>
               <input class="field-text__input" type="text" name="name" id="name"  placeholder="Барсик">
@@ -56,33 +56,33 @@
           </fieldset>
 
           <fieldset class="form__data  form__data--radio">
-<div class="form__data-wrap">
-  <div class="field-radio">
-    <input class="form__radio-input" type="radio" name="target"  id="minus-weight" checked>
-    <label class="form__radio-label" for="minus-weight">Похудение</label>
-  </div>
-  <div class="field-radio">
-    <input class="form__radio-input" type="radio" name="target"  id="plus-weight">
-    <label class="form__radio-label" for="plus-weight">Набор массы</label>
-  </div>
-  <div class="field-radio">
-    <input class="form__radio-input" type="radio" name="target"  id="advise">
-    <label class="form__radio-label" for="advise">Не знаю (нужен ваш совет)</label>
-  </div>
-</div>
+            <div class="form__data-wrap">
+              <div class="field-radio">
+                <input class="field-radio__input" type="radio" name="target"  id="minus-weight" checked>
+                <label class="field-radio__label" for="minus-weight">Похудение</label>
+              </div>
+              <div class="field-radio">
+                <input class="field-radio__input" type="radio" name="target"  id="plus-weight">
+                <label class="field-radio__label" for="plus-weight">Набор массы</label>
+              </div>
+              <div class="field-radio">
+                <input class="field-radio__input" type="radio" name="target"  id="advise">
+                <label class="field-radio__label" for="advise">Не знаю (нужен ваш совет)</label>
+              </div>
+            </div>
           </fieldset>
         </div>
 
         <fieldset class="form__contacts">
           <h2 class="form__subtitle">Контактные данные(владельца кота)</h2>
           <div class="form__contacts-wrap">
-            <div class="field-text">
+            <div class="field-text  field-text--contacts">
               <label class="field-text__label" for="email">E-MAIL:*</label>
-              <input class="field-text__input" type="email" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
+              <input class="field-text__input  field-text__input--email" type="email" name="email" id="email" placeholder="KUKLACHEV@GMAIL.COM">
             </div>
-            <div class="field-text">
+            <div class="field-text  field-text--contacts  field-text--tel">
               <label class="field-text__label" for="tel">Телефон:*</label>
-              <input class="field-text__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+              <input class="field-text__input  field-text__input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
             </div>
           </div>
         </fieldset>
@@ -90,7 +90,7 @@
         <fieldset class="form__comment">
           <h2 class="form__subtitle">Коментарий</h2>
           <div class="form__field">
-            <textarea class="form__textarea" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота
+            <textarea class="form__textarea" name="comment" cols="30" rows="6">Расскажите обо всех повадках кота
             </textarea>
           </div>
         </fieldset>
@@ -99,20 +99,20 @@
           <h2 class="form__subtitle">Дополнительно</h2>
           <div class="form__additions-wrap">
             <div class="field-checkbox">
-              <input class="field__checkbox-input" type="checkbox" name="sugar-free"  id="sugar-free" checked>
-              <label class="field__checkbox-label" for="sugar-free">Сахарозаменитель</label>
+              <input class="field-checkbox__input" type="checkbox" name="sugar-free"  id="sugar-free" checked>
+              <label class="field-checkbox__label" for="sugar-free">Сахарозаменитель</label>
             </div>
             <div class="field-checkbox">
-              <input class="field__checkbox-input" type="checkbox" name="water"  id="water">
-              <label class="field__checkbox-label" for="water">Питьевая вода</label>
+              <input class="field-checkbox__input" type="checkbox" name="water"  id="water">
+              <label class="field-checkbox__label" for="water">Питьевая вода</label>
             </div>
             <div class="field-checkbox">
-              <input class="field__checkbox-input" type="checkbox" name="milk"  id="milk">
-              <label class="field__checkbox-label" for="milk">Молоко</label>
+              <input class="field-checkbox__input" type="checkbox" name="milk"  id="milk">
+              <label class="field-checkbox__label" for="milk">Молоко</label>
             </div>
             <div class="field-checkbox">
-              <input class="field__checkbox-input" type="checkbox" name="vitamine"  id="vitamine">
-              <label class="field__checkbox-label" for="vitamine">Витамины</label>
+              <input class="field-checkbox__input" type="checkbox" name="vitamine"  id="vitamine">
+              <label class="field-checkbox__label" for="vitamine">Витамины</label>
             </div>
           </div>
         </fieldset>
