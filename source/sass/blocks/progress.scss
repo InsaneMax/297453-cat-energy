@@ -48,6 +48,14 @@
     position: absolute;
     top: -7px;
     left: 200px;
+
+    &:hover {
+      box-shadow: 0 3px 5px 1px #dcdcdc;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 2px $main-color, 0 3px 5px 1px #dcdcdc;
+    }
   }
 
   .progress__text-wrap {

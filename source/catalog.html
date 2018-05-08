@@ -14,7 +14,13 @@
       <div class="page-header__top">
         <div class="page-header__wrap-top">
           <div class="page-header__logo">
-            <a class="logo__link" href="index.html"><img src="img/logo-mobile.svg" width="200"  alt="Cat energy"></a>
+            <a class="logo__link" href="index.html">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="#">
+                <source media="(min-width: 768px)" srcset="#">
+                <img src="img/logo-mobile.svg" width="200"  alt="Cat energy">
+              </picture>
+            </a>
           </div>
           <button class="page-header__toggle">Открыть меню</button>
         </div>

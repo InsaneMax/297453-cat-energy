@@ -43,14 +43,34 @@
   }
 }
 
-// @media (min-width: $screen-lg) {
+@media (min-width: $screen-lg) {
 
-//   .contacts__inner {
-//     position: absolute;
-//     top: -800px;
-//     left: 500px;
-//     width: 570px;
-//     background-color: #fff;
-//   }
+  .contacts__inner {
+    position: absolute;
+    width: 570px;
+    padding: 40px 80px;
+    top: 2200px;
+    left: 100px;
+    width: 570px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 12;
+    transition-duration: 1s;
+  }
 
-// }
+  .contacts__inner:hover {
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .contacts__invite {
+    width: 245px;
+    font-size: $font-md;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    font-size: $font-md;
+    line-height: $height-md;
+  }
+
+}

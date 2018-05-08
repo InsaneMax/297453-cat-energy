@@ -4,6 +4,14 @@
 
 .logo__link {
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .logo--footer .logo__link {

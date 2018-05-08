@@ -18,6 +18,17 @@
   border-bottom: 1px solid;
 }
 
+.menu__link[href] {
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: $font-active-dark;
+    }
+}
+
 @media (min-width: $screen-md) {
   .menu {
     width: 516px;
@@ -50,10 +61,6 @@
     line-height: 24px;
     color: $light-gray;
     border: none;
-
-    // &:last-child {
-    //   margin-right: 0;
-    // }
   }
 }
 
@@ -69,7 +76,17 @@
   }
 
   .page-header--index .menu__link {
-    // padding: 15px 10px;
     color: #ffffff;
+  }
+
+  .page-header--index .menu__link[href] {
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: $font-active-light;
+    }
   }
 }
