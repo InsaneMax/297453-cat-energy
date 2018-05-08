@@ -15,7 +15,6 @@
 }
 
 .form__data {
-
   padding: 10px;
   &--text {
     @include container();
@@ -27,12 +26,52 @@
   }
 }
 
-
 .form__data-wrap {
   @include container();
 }
 
+.form__contacts {
+  padding: 0;
+  margin: 0;
+}
+
+.form__contacts-wrap {
+  @include container();
+}
+
+.form__subtitle {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  font-size: $font-lg;
+  line-height: 1em;
+  text-transform: none;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $main-color;
+  }
+}
+
+.form__subtitle-wrap {
+  @include container();
+}
+
+.form__subtitle-wrap span {
+  // display: block;
+  padding: 0 10px;
+  background-color: #ffffff;
+}
+
 .form-comment {
+    @include container();
   padding: 10px 0;
 }
 
@@ -51,15 +90,7 @@
   box-sizing: border-box;
 }
 
-.form__contacts {
-  @include container();
-}
-
-.form__comment {
-  @include container();
-}
-
-.form__additions {
+.form__additions-wrap {
   @include container();
 }
 
@@ -85,24 +116,6 @@
   text-transform: none;
   }
 
-.form__subtitle {
-  position: relative;
-  font-size: $font-lg;
-  line-height: 1em;
-  text-transform: none;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    left: 160px;
-    width: 100%;
-    height: 3px;
-    background-color: $main-color;
-  }
-}
-
-
 @media (min-width: $screen-md) {
 
   .form__data,
@@ -114,7 +127,6 @@
   }
 
   .form {
-    width: 630px;
     margin: 0 auto;
     font-size: $font-md;
     line-height: 1em;
@@ -137,29 +149,19 @@
     }
   }
 
+  .form__data-container {
+    @include container();
+  }
+
 
 .form__data-wrap {
   width: auto;
   margin: 0;
 }
 
-  .form__subtitle {
+.form__subtitle {
   font-size: $font-xl;
   line-height: 1em;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 14px;
-    left: -410px;
-    width: 50%;
-    height: 3px;
-    background-color: $main-color;
-  }
-
-  &::after {
-    left: 555px;
-  }
 }
 
 .form__contacts {
@@ -167,28 +169,27 @@
   margin: 0 auto;
 }
 
-.form__comment {
-  width: auto;
-  margin: 0 auto;
-}
+// .form__contacts-wrap {
+//   @include container();
+// }
 
-.form__additions {
-  width: auto;
-  margin: 0 auto;
-}
+// .form__comment {
+//   width: auto;
+//   margin: 0 auto;
+// }
 
-.form__submit {
-  width: auto;
-  margin: 0 auto;
-}
+// .form__additions {
+//   width: auto;
+//   margin: 0 auto;
+// }
 
-.form__field {
-  width: auto;
-  margin: 0 auto;
-}
+// .form__submit {
+//   width: auto;
+//   margin: 0 auto;
+// }
+
 
   .form__description {
-    width: auto;
     font-size: $font-md;
     line-height: 30px;
     margin-bottom: 30px;
@@ -233,9 +234,6 @@
 
 @media (min-width: $screen-lg) {
 
-  .form {
-    @include container();
-  }
 
   .form__data-container {
     flex-direction: row;
@@ -244,6 +242,13 @@
 
   .form__data {
     width: 570px;
+
+    &--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 200px;
+    }
   }
 
   .form__contacts-wrap {

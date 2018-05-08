@@ -123,6 +123,7 @@
     left: 102px;
     background-color: transparent;
     margin-bottom: 0;
+    transform: translateX(100px);
 
     &::after {
       height: 500px;

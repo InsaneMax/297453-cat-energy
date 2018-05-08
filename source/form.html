@@ -46,7 +46,7 @@
           </p>
         </div>
         <div class="form__data-container">
-          <fieldset class="form__data  form__data--text">
+          <div class="form__data  form__data--text">
             <div class="field-text">
               <label class="field-text__label" for="name">Имя:*</label>
               <input class="field-text__input" type="text" name="name" id="name"  placeholder="Барсик">
@@ -59,7 +59,7 @@
               <label class="field-text__label" for="age">Возраст (лет):</label>
               <input class="field-text__input" type="number" name="age" id="age" placeholder="7">
             </div>
-          </fieldset>
+          </div>
 
           <fieldset class="form__data  form__data--radio">
             <div class="form__data-wrap">
@@ -80,7 +80,11 @@
         </div>
 
         <fieldset class="form__contacts">
-          <h2 class="form__subtitle">Контактные данные(владельца кота)</h2>
+          <h2 class="form__subtitle">
+            <div class="form__subtitle-wrap">
+              <span>Контактные данные(владельца кота)</span>
+            </div>
+          </h2>
           <div class="form__contacts-wrap">
             <div class="field-text  field-text--contacts">
               <label class="field-text__label" for="email">E-MAIL:*</label>
@@ -94,7 +98,11 @@
         </fieldset>
 
         <fieldset class="form__comment">
-          <h2 class="form__subtitle">Коментарий</h2>
+          <h2 class="form__subtitle">
+            <div class="form__subtitle-wrap">
+              <span>Коментарий</span>
+            </div>
+          </h2>
           <div class="form__field">
             <textarea class="form__textarea" name="comment" cols="30" rows="6">Расскажите обо всех повадках кота
             </textarea>
@@ -102,7 +110,11 @@
         </fieldset>
 
         <fieldset class="form__additions">
-          <h2 class="form__subtitle">Дополнительно</h2>
+          <h2 class="form__subtitle">
+            <div class="form__subtitle-wrap">
+              <span>Дополнительно</span>
+            </div>
+          </h2>
           <div class="form__additions-wrap">
             <div class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" name="sugar-free"  id="sugar-free" checked>
