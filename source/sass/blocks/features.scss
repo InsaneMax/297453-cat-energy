@@ -62,13 +62,44 @@
     &::before {
       left: 0;
       top: 20px;
-      width: 100px;
-      height: 100px;
+      width: 80px;
+      height: 80px;
       background-color: $main-color;
-      background-image: url("../img/advantage-clock@1x.png");
       background-position: center;
       background-repeat: no-repeat;
     }
+
+    &::after {
+      content: "1";
+      position: absolute;
+      left: 115px;
+      top: -20px;
+      width: 100px;
+      height: 100px;
+      font-size: 280px;
+      line-height: 1em;
+      color: $gray;
+      z-index: -1;
+    }
+
+    &--powder::after {
+      content: "2";
+    }
+
+    &--substitute::after {
+      content: "3";
+    }
+
+    &--fast::after {
+      content: "4";
+    }
+
+  }
+
+  .features__title {
+    font-size: 60px;
+    line-height: 1em;
+    margin-bottom: 50px;
   }
 
   .features__text {
@@ -83,4 +114,5 @@
     .features__item {
       width: 245px;
     }
+
 }

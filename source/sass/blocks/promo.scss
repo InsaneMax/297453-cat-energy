@@ -28,6 +28,9 @@
 @media (min-width: $screen-md) {
 
   .promo {
+    width: 427px;
+    margin: 0;
+    margin-left: 50px;
     text-align: left;
     color: $dark-gray;
   }
@@ -49,5 +52,12 @@
     position: relative;
     bottom:-10px;
     z-index: 12;
+  }
+}
+
+@media (min-width: $screen-lg) {
+
+  .promo {
+    // margin-left: 145px;
   }
 }

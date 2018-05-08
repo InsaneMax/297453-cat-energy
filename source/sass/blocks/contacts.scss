@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   background-color: $gray;
 
   &--index {
@@ -10,7 +11,7 @@
   @include container();
   display: flex;
   justify-content: space-between;
-  padding: 35px 0;
+  padding: 10px 0;
 }
 
 .contacts__invite {
@@ -20,13 +21,56 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $dark-gray;
+  flex-shrink: 0
 }
 
 .contacts__address {
   width: 50%;
   font-size: $font-base;
   line-height: $height-md;
-  text-transform: uppercase;
-  color: $dark-gray;
-  text-align: right;
+  color: $font-color;
+  text-align: left;
+  margin-left: 28px;
+}
+
+@media (min-width: $screen-md) {
+
+  .contacts__inner {
+    width: 630px;
+  }
+
+  .contacts__address {
+    text-align: right;
+  }
+}
+
+@media (min-width: $screen-lg) {
+
+  .contacts__inner {
+    position: absolute;
+    width: 450px;
+    padding: 40px 80px;
+    top: 70px;
+    left: 70px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.4);
+    z-index: 12;
+    transition-duration: 1s;
+  }
+
+  .contacts__inner:hover {
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+  }
+
+  .contacts__invite {
+    width: 245px;
+    font-size: $font-md;
+    line-height: 25px;
+  }
+
+  .contacts__address {
+    font-size: $font-md;
+    line-height: $height-md;
+  }
+
 }

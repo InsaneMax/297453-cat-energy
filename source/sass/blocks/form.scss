@@ -2,41 +2,119 @@
   font-size: $font-sm;
   line-height: $height-base;
   color: $light-gray;
+  text-transform: uppercase;
 }
 
 .form__description {
+  @include container();
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 30px;
+  font-size: $font-base;
+  line-height: $height-base;
 }
 
 .form__data {
   padding: 10px;
+  &--text {
+    @include container();
+  }
+
+  &--radio {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  }
+}
+
+.form__data-wrap {
+  @include container();
+}
+
+.form__contacts {
+  padding: 0;
+  margin: 0;
+}
+
+.form__contacts-wrap {
+  @include container();
+}
+
+.form__subtitle {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  font-size: $font-lg;
+  line-height: 1em;
+  text-transform: none;
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: $main-color;
+  }
+}
+
+.form__subtitle-wrap {
+  @include container();
+}
+
+.form__subtitle-wrap span {
+  // display: block;
+  padding: 0 10px;
+  background-color: #ffffff;
 }
 
 .form-comment {
+    @include container();
   padding: 10px 0;
 }
 
+.form__field {
+  @include container();
+}
+
 .form__textarea {
+  width: 100%;
   padding: 10px;
-  font-size: $font-base;
+  font-family: inherit;
+  font-size: $font-sm;
   line-height: $height-base;
+  color: $font-color;
   text-transform: uppercase;
   box-sizing: border-box;
 }
 
-.form__subtitle {
-  font-size: $font-lg;
-  line-height: 1em;
+.form__additions-wrap {
+  @include container();
+}
+
+.form__submit {
+  @include container();
+  text-align: center;
+}
+
+.form__submit-btn {
+  width: 100%;
+  border: none;
+  font-size: $font-sm;
+  line-height: $height-md;
+  margin-bottom: 30px;
 }
 
 .form__submit-tip {
+  display: block;
   font-size: $font-base;
   line-height: 16px;
   color: $font-color;
+  margin-bottom: 20px;
+  text-transform: none;
   }
-
 
 @media (min-width: $screen-md) {
 
@@ -49,26 +127,81 @@
   }
 
   .form {
-    width: 630px;
     margin: 0 auto;
     font-size: $font-md;
     line-height: 1em;
   }
 
-  .form__subtitle {
+  .form__data {
+    padding: 10px 0;
+
+    &--text {
+      width: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+    &--radio {
+      width: 100%;
+      padding: 20px;
+      border: 1px solid #000;
+      box-sizing: border-box;
+    }
+  }
+
+  .form__data-container {
+    @include container();
+  }
+
+
+.form__data-wrap {
+  width: auto;
+  margin: 0;
+}
+
+.form__subtitle {
   font-size: $font-xl;
   line-height: 1em;
 }
 
+.form__contacts {
+  width: auto;
+  margin: 0 auto;
+}
+
+// .form__contacts-wrap {
+//   @include container();
+// }
+
+// .form__comment {
+//   width: auto;
+//   margin: 0 auto;
+// }
+
+// .form__additions {
+//   width: auto;
+//   margin: 0 auto;
+// }
+
+// .form__submit {
+//   width: auto;
+//   margin: 0 auto;
+// }
+
+
   .form__description {
-    width: 350px;
     font-size: $font-md;
     line-height: 30px;
     margin-bottom: 30px;
   }
 
+  .form__description p {
+    width: 350px;
+  }
+
   .form__textarea {
     width: 100%;
+    padding: 15px;
 }
 
   .form__additions-wrap {
@@ -101,9 +234,6 @@
 
 @media (min-width: $screen-lg) {
 
-  .form {
-    width: auto;
-  }
 
   .form__data-container {
     flex-direction: row;
@@ -112,6 +242,13 @@
 
   .form__data {
     width: 570px;
+
+    &--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 200px;
+    }
   }
 
   .form__contacts-wrap {
@@ -119,11 +256,26 @@
     justify-content: space-between;
   }
 
+    .form__additions-wrap {
+      justify-content: flex-start;
+    }
+
   .form__submit-btn {
     width: 570px;
   }
 
   .form__submit-tip {
 
+  }
+
+  .form__subtitle {
+
+    &::before {
+      left: -650px;
+    }
+
+    &::after {
+
+    }
   }
 }

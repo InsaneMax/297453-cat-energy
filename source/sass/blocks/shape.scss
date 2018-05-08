@@ -79,10 +79,19 @@
 
 @media (min-width: $screen-md) {
 
+  .shape {
+    margin-bottom: 55px;
+  }
+
+  .shape__card {
+    padding: 35px 35px 0 35px;
+  }
+
   .shape__title {
     font-size: $font-xl;
     line-height: 1em;
     padding: 0;
+    margin-top: 20px;
 
     &::before {
       right: 15px;
@@ -111,19 +120,33 @@
   }
 
   .shape__link {
+    padding: 35px 0 65px 0;
     border: none;
+
+    &::after {
+      top: 31px;
+    }
   }
 }
 
 @media (min-width: $screen-lg) {
 
   .shape {
+    @include container();
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
   }
 
   .shape__card {
     width: 570px;
     box-sizing: border-box;
+    margin-bottom: 0;
+    margin: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
     .shape__title {

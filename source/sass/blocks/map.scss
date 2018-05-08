@@ -1,7 +1,21 @@
 .map {
-  min-height: 230px;
+  width: 100%;
+  position: relative;
+  min-height: 360px;
   background-color: #fdf7f0;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    height: 50px;
+    width: 50px;
+    background-image: url("../img/map-pin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

@@ -7,8 +7,24 @@
   color: #ffffff;
   text-align: center;
 
+  &:hover {
+    background-color: $bg-hover;
+  }
+
+  &:active {
+    color: $font-active-light;
+  }
+
   &--gray {
     background-color: $gray;
     color: #000000;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: $font-active-dark;
+    }
   }
 }

@@ -15,7 +15,7 @@
 }
 
 .example__text-wrap {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .example__text-wrap p {
@@ -33,10 +33,11 @@
 }
 
 .example__item {
+  position: relative;
   display: block;
   width: 125px;
   margin-right: 30px;
-  padding: 10px;
+  padding: 15px;
   border: 1px solid;
   box-sizing: border-box;
   font-size: $font-lg;
@@ -50,10 +51,11 @@
 }
 
 .example__sub-text {
-  position: relative;
-  top: 25px;
+  position: absolute;
+  top: 43px;
+  left: 30px;
   display: block;
-  padding: 5px;
+  padding: 0 10px;
   font-size: $font-xs;
   line-height: 1em;
   text-align: center;
@@ -73,10 +75,29 @@
   margin-bottom: 20px;
 }
 
+.example__progress {
+  padding: 20px 0;
+}
+
 @media (min-width: $screen-md) {
 
   .example {
+    background-color: #ffffff;
     border-top: 1px solid #000;
+  }
+
+  .example__inner {
+    width: auto;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 1em;
+  }
+
+  .example__wrap {
+    @include container();
+    padding-bottom: 100px;
   }
 
   .example__result {
@@ -89,13 +110,40 @@
     width: 354px;
   }
 
+  .example__item {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__sub-text {
+    top: 54px;
+    left: 25px;
+    font-size: $font-base;
+    line-height: 1em;
+    background-color: #ffffff;
+  }
+
   .example__illustration {
+    padding: 110px 0 50px 0;
+    background-color: $gray;
     text-align: center;
   }
 
+  .example__img  {
+    width: 500px;
+    margin-top: -175px;
+  }
+
   .example__money {
-    width: 135px;
+    width: 185px;
     text-align: right;
+    font-size: $font-md;
+    line-height: 1em;
+  }
+
+  .example__money span {
+    display: block;
+    margin-top: 10px;
   }
 }
 
@@ -103,9 +151,11 @@
 
   .example {
     padding: 30px;
+    background-color: $gray;
   }
 
   .example__inner {
+    @include container();
     display: flex;
   }
 
@@ -124,11 +174,17 @@
 
   .example__money span {
     display: inline-block;
+    margin: 0;
     margin-left: 65px;
   }
 
   .example__img {
-    width: 500px;
-    margin-top: -115px;
+    width: 590px;
+    margin-top: -312px;
+    background-color: transparent;
+  }
+
+  .example__sub-text {
+    background-color: $gray;
   }
 }
