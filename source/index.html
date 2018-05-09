@@ -29,8 +29,8 @@
             <div class="page-header__logo  logo">
               <a class="logo__link" href="index.html">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="#">
-                  <source media="(min-width: 768px)" srcset="#">
+                  <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                   <img src="img/logo-mobile.svg" width="200"  alt="Cat energy">
                 </picture>
               </a>
@@ -106,7 +106,11 @@
           </div>
         </div>
         <div class="example__illustration">
-          <img class="example__img" src="img/before-mobile@1x.png" alt="">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png">
+            <img class="example__img" srcset="img/before-mobile@1x.png, img/before-mobile@2x.png" width="200"  alt="Cat energy">
+          </picture>
           <div class="example__progress  progress">
             <span class="progress__text-wrap">было</span>
             <div class="progress__container">

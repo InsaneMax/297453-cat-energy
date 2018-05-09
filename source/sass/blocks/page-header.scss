@@ -32,8 +32,13 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
+  background-size: contain;
   padding-bottom: 40px;
   margin-bottom: 205px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 
   &::after {
     content: "";
@@ -45,6 +50,11 @@
     background-image: url("../img/index-can-mobile@1x.png");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+      background-image: url("../img/index-can-mobile@2x.png");
+    }
   }
 }
 
@@ -88,8 +98,13 @@
       width: 600px;
       bottom: -500px;
       height: 650px;
+      background-image: url("../img/index-can-tablet@1x.jpg");
       background-size: 610px;
       background-position: left;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+        background-image: url("../img/index-can-tablet@2x.jpg");
+      }
     }
   }
 }
@@ -98,7 +113,7 @@
 
   .page-header--index {
     margin-bottom: 80px;
-    background: linear-gradient(to right, #fff 50% , $main-color 50%);
+    background: linear-gradient(to right, #fff 50% , #65a93c 50%);
   }
 
   .page-header--index .page-header__inner {
@@ -114,22 +129,26 @@
 
   .page-header__top-container {
     width: 540px;
-    margin-left: 70px;
+    margin-left: 65px;
   }
 
   .page-header__main {
     position: absolute;
     top: 133px;
-    left: 102px;
+    left: 50%;
     background-color: transparent;
     margin-bottom: 0;
-    transform: translateX(100px);
+    transform: translateX(-616px);
 
     &::after {
-      height: 500px;
+      height: 555px;
       bottom: -155px;
       right: -455px;
-      background-size: 400px;
+      background-image: url("../img/index-can-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+        background-image: url("../img/index-can-desktop@2x.png");
+      }
     }
   }
 }
