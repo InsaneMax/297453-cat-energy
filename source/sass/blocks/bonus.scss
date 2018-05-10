@@ -13,43 +13,47 @@
   text-align: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+
+  background-image:
     url("../img/icon-gift.svg"),
     url("../img/gift-photo-mobile@2x.jpg");
   }
 }
 
 
-// @media (min-width: $screen-md){
+@media (min-width: $screen-md){
 
-//   .bonus {
-//     padding: 57px 0;
-//     background-image:
-//       url("../img/icon-gift.svg"),
-//       url("../img/gift-photo-tablet@1x.jpg");
-//     background-size: 50px, contain;
-//     background-position: center 15px, center;
+  .bonus {
+    padding: 57px 0;
+    background-image:
+      url("../img/icon-gift.svg"),
+      url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 50px, contain;
+    background-position: center 15px, center;
 
-//     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-//       url("../img/icon-gift.svg"),
-//       url("../img/gift-photo-tablet@2x.jpg");
-//     }
-//   }
-// }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/icon-gift.svg"),
+      url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+}
 
-// @media (min-width: $screen-lg) {
+@media (min-width: $screen-lg) {
 
-//   .bonus {
-//     width: 245px;
-//     padding: 110px 0;
-//     background-image:
-//       url("../img/icon-gift.svg"),
-//       url("../img/gift-photo-desktop@1x.jpg");
-//     background-size: 50px, contain;
-//     background-position: center 55px, center;
+  .bonus {
+    width: 245px;
+    padding: 110px 0;
+    background-image:
+      url("../img/icon-gift.svg"),
+      url("../img/gift-photo-desktop@1x.jpg");
+    background-size: 50px, contain;
+    background-position: center 55px, center;
 
-//     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-//       url("../img/icon-gift.svg"),
-//       url("../img/gift-photo-desktop@2x.jpg");
-//     }
-//   }
-// }
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/icon-gift.svg"),
+      url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+}

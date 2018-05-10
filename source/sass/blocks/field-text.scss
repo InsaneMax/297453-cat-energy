@@ -40,6 +40,24 @@
   line-height: $height-base;
   color: $font-color;
   text-transform: uppercase;
+  border: 1px solid #d0d0d0;
+
+  &:hover {
+    border: 1px solid #bfbfbf;
+  }
+
+  &:focus {
+    border: 1px solid #000;
+  }
+
+  // &:required {
+  //   border: 1px solid #ff8282;
+  // }
+
+  &:invalid {
+    border: 1px solid #ff8282;
+    outline: 1px solid #ff8282;
+  }
 
   &--email {
     padding-right: 30px;
