@@ -86,11 +86,12 @@
 @media (min-width: $screen-md) {
 
   .shape {
-    margin-bottom: 55px;
+    margin-bottom: 41px;
   }
 
   .shape__card {
     padding: 50px 50px 0 50px;
+    margin-bottom: 30px;
   }
 
   .shape__title {
@@ -107,28 +108,28 @@
     }
 
     &::after {
-      right: 15px;
-      top: 0;
-      width: 145px;
-      height: 145px;
+      right: -4px;
+      top: 4px;
+      width: 187px;
+      height: 195px;
     }
   }
 
   .shape__title--weight-gain::after {
-      right: 0;
-      top: 35px;
-      width: 200px;
-      height: 200px;
+      right: -26px;
+      top: 59px;
+      width: 268px;
+      height: 231px;
 }
 
   .shape__descr {
-    width: 385px;
+    width: 333px;
     font-size: $font-sm;
     line-height: 24px;
   }
 
   .shape__link {
-    padding: 35px 0 65px 0;
+    padding: 35px 0 60px 0;
     border: none;
     font-size: $font-md;
     line-height: 1em;
