@@ -1,21 +1,22 @@
 .product {
-  padding: 10px 0 15px 0;
+  // padding: 5px 0 24px 0;
   border-bottom: 1px solid #000;
+  min-height: 209px;
 }
 
 .product--more {
   position: relative;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 75px;
   box-sizing: border-box;
 
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 22px;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 30px;
     background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
     background-position:  center;
@@ -27,6 +28,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .product__title {
@@ -38,6 +40,8 @@
 .product__table {
   width: 100%;
   border-collapse: collapse;
+  font-size: $font-xs;
+  line-height: 16px;
 }
 
 .product__table tbody td:nth-child(2n) {
@@ -62,8 +66,9 @@
   padding-bottom: 10px;
 }
 
-.product_img-wrap {
+.product__img-wrap {
   display: block;
+  width: 140px;
 }
 
 .product__link {
@@ -75,6 +80,8 @@
 }
 
 .product__more-link {
+  display: block;
+  margin-bottom: 8px;
   font-size: $font-sm;
   line-height: $height-md;
   color: $dark-gray;
@@ -85,6 +92,8 @@
 .product__more-text {
   font-size: $font-xs;
   line-height: 16px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 @media (min-width: $screen-md) {
