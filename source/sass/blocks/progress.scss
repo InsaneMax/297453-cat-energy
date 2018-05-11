@@ -40,13 +40,13 @@
   }
 
   .progress__bar {
-    width: 10px;
-    height: 10px;
-    border: 7px solid #ffffff;
+    width: 7px;
+    height: 7px;
+    border: 13px solid #ffffff;
     box-shadow: 0 0 3px 1px #dcdcdc;
     border-radius: 50%;
     position: absolute;
-    top: -7px;
+    top: -13px;
     left: 200px;
 
     &:hover {
@@ -60,5 +60,14 @@
 
   .progress__text-wrap {
     border-bottom: 1px dotted $light-gray;
+    font-size: $font-md;
+    line-height: 1em;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .progress {
+    width: 570px;
+    margin-left: 77px;
   }
 }

@@ -71,6 +71,7 @@
 
   .page-header__top {
     padding: 20px 0;
+    height: 100%;
   }
 
   .page-header__inner {
@@ -123,39 +124,43 @@
 @media (min-width: $screen-lg) {
 
   .page-header--index {
-    margin-bottom: 80px;
+    margin-bottom: 74px;
     background: linear-gradient(to right, #fff 50% , #65a93c 50%);
   }
 
   .page-header--index .page-header__inner {
     justify-content: center;
+    align-items: flex-start;
     width: auto;
     height: 700px;
   }
 
    .page-header__top {
-    width: 680px;
+    width: 642px;
     flex-shrink: 0;
   }
 
   .page-header__top-container {
     width: 540px;
-    margin-left: 65px;
+    margin-left: 30px;
+    margin-top: 32px;
   }
 
   .page-header__main {
     position: absolute;
-    top: 133px;
-    left: 50%;
+    top: 188px;
+    left: 56%;
     background-color: transparent;
     margin-bottom: 0;
     transform: translateX(-616px);
 
     &::after {
       height: 555px;
-      bottom: -155px;
-      right: -455px;
+      bottom: -88px;
+      left: 74%;
+      // right: -565px;
       background-image: url("../img/index-can-desktop@1x.png");
+      background-size: 555px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
         background-image: url("../img/index-can-desktop@2x.png");

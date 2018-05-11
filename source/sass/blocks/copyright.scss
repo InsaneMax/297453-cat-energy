@@ -16,3 +16,14 @@
 .copyright__logo {
   display: block;
 }
+
+.copyright__svg {
+  fill: $font-color;
+}
+
+@media (min-width: $screen-md) {
+
+  .copyright__svg {
+    width: 40px;
+  }
+}

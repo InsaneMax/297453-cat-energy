@@ -144,8 +144,13 @@
 }
 
 @media (min-width: $screen-lg) {
-    .features__item {
-      width: 245px;
-    }
+
+  .features {
+    padding-bottom: 148px;
+  }
+
+  .features__item {
+    width: 245px;
+  }
 
 }

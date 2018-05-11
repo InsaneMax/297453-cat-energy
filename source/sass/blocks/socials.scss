@@ -19,21 +19,48 @@
 }
 
 .socials__svg {
-  // width: 40px;
-  // height: 40px;
+  fill: $font-color;
 
   &:hover {
-    stroke: $main-color;
+    fill: $main-color;
   }
 
   &:active {
-    opacity: 0.3;
+    opacity: 0.5;
   }
 }
 
 @media (min-width: $screen-md) {
 
+  .socials {
+    display: flex;
+  }
+
   .socials__list {
     border: none;
+    align-items: center;
+  }
+
+  .socials__item {
+    width: 50px;
+    height: 40px;
+  }
+
+  .socials__svg {
+
+    &--vk {
+    width: 40px;
+    height: 40px;
+    }
+
+    &--insta {
+    width: 30px;
+    height: 30px;
+    }
+
+    &--fb {
+    width: 30px;
+    height: 30px;
+    }
   }
 }

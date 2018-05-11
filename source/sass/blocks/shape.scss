@@ -147,7 +147,7 @@
     @include container();
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 71px;
   }
 
   .shape__card {
@@ -164,27 +164,33 @@
     .shape__title {
     font-size: $font-xl;
     line-height: 1em;
-    padding-left: 100px;
+    padding-left: 160px;
 
     &::before {
-      left: 15px;
-      top: -12px;
-      width: 60px;
-      height: 60px;
+      left: 3px;
+      top: -29px;
+      width: 100px;
+      height: 100px;
     }
 
     &::after {
-      left: 26px;
-      top: -18px;
-      width: 60px;
-      height: 60px;
+      left: 17px;
+      top: -34px;
+      width: 95px;
+      height: 95px;
     }
   }
 
     .shape__title--weight-gain::after {
-      left: 5px;
-      top: 5px;
-      width: 75px;
-      height: 75px;
+      left: -14px;
+      top: -8px;
+      width: 133px;
+      height: 133px;
+  }
+
+  .shape__descr {
+    width: 490px;
+    margin-top: 74px;
+    margin-bottom: 0;
   }
 }

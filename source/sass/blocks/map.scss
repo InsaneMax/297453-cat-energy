@@ -29,14 +29,17 @@
 
   .map {
     background-image: url("../img/bg-map-tablet@1x.png");
+    min-height: 400px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.png");
     }
 
     &::after {
-      left: 48%;
-      top: 54%;
+      width: 95px;
+      height: 95px;
+      left: 43%;
+      top: 42%;
     }
   }
 }
@@ -51,8 +54,10 @@
     }
 
     &::after {
-      left: 44%;
-      top: 41%;
+      width: 100px;
+      height: 100px;
+      left: 71.5%;
+      top: 43%;
     }
   }
 }
