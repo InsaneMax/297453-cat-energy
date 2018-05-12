@@ -35,7 +35,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 18px 0;
+    padding: 0;
   }
 
   .menu__item {
@@ -68,7 +68,7 @@
 @media (min-width: $screen-lg) {
 
   .menu__item {
-    margin-left: 35px;
+    margin-left: 30px;
     letter-spacing: 0.8px;
 
     &:first-child {
@@ -79,7 +79,7 @@
   .page-header--index .menu {
     flex-wrap: wrap;
     margin-left:  95px;
-    padding: 60px 0;
+    padding: 63px 0;
   }
 
   .page-header--index .menu__item--active::before {

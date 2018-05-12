@@ -1,12 +1,13 @@
 .bonus {
-  padding: 100px 0;
+  padding: 167px 0 26px 0;
+  margin-bottom: 36px;
   background-color: $main-color;
   background-image:
     url("../img/icon-gift.svg"),
     url("../img/gift-photo-mobile@1x.jpg");
-  background-size: 50px, auto;
+  background-size: 55px, auto;
   background-repeat: no-repeat;
-  background-position: center 65px, center;
+  background-position: center 62px, center;
   color: #ffffff;
   font-size: $font-sm;
   line-height: $height-md;
@@ -24,12 +25,14 @@
 @media (min-width: $screen-md){
 
   .bonus {
-    padding: 57px 0;
+    padding: 54px 0;
+    margin-bottom: 75px;
     background-image:
       url("../img/icon-gift.svg"),
       url("../img/gift-photo-tablet@1x.jpg");
-    background-size: 50px, contain;
-    background-position: center 15px, center;
+    background-size: 55px, contain;
+    background-position: 90px 66px, center;
+    text-align: left;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
@@ -37,23 +40,33 @@
       url("../img/gift-photo-tablet@2x.jpg");
     }
   }
+
+  .bonus p {
+    margin-left: 425px;
+  }
 }
 
 @media (min-width: $screen-lg) {
 
   .bonus {
     width: 245px;
-    padding: 110px 0;
+    padding: 170px 0 28px 0;
+    margin-bottom: 0;
     background-image:
       url("../img/icon-gift.svg"),
       url("../img/gift-photo-desktop@1x.jpg");
-    background-size: 50px, contain;
-    background-position: center 55px, center;
+    background-size: 53px, contain;
+    background-position: center 66px, center;
+    text-align: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
       url("../img/icon-gift.svg"),
       url("../img/gift-photo-desktop@2x.jpg");
     }
+  }
+
+  .bonus p {
+    margin-left: 0;
   }
 }

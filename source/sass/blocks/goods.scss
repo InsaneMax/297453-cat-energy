@@ -26,7 +26,7 @@
 
   .goods__title-wrap {
     @include container();
-    margin-bottom: 40px;
+    margin-bottom: 0;
     border: none;
   }
 
@@ -35,6 +35,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 42px;
   }
 }
 
@@ -42,5 +43,6 @@
 
   .goods__wrap {
     justify-content: flex-start;
+    margin-bottom: 52px;
   }
 }

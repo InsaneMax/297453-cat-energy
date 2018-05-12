@@ -7,6 +7,10 @@
   @include container();
 }
 
+.example__wrap {
+  margin-bottom: 53px;
+}
+
 .example__title {
   margin: 0;
   padding: 16px 0;
@@ -56,7 +60,8 @@
 .example__sub-text {
   position: absolute;
   top: 43px;
-  left: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   padding: 0 10px;
   font-size: $font-xs;
@@ -73,10 +78,6 @@
   text-transform: uppercase;
   text-align: center;
   color: $dark-gray;
-}
-
-.example__wrap {
-  margin-bottom: 53px;
 }
 
 .example__illustration {
@@ -142,15 +143,11 @@
 
   .example__sub-text {
     top: 63px;
-    left: 25px;
     padding: 0 15px;
     font-size: $font-base;
     line-height: 1em;
     background-color: #ffffff;
-
-    &:nth-child(2) {
-      left: 15px;
-    }
+    white-space: nowrap;
   }
 
   .example__sub-text br {
@@ -196,15 +193,15 @@
   }
 
   .example__wrap {
-    width: 480px;
+    width: 545px;
     margin: 0;
-    margin-right: 180px;
+    margin-right: 130px;
     padding-bottom: 0;
   }
 
   .example__title {
     margin-top: -205px;
-    margin-bottom: 103px;
+    margin-bottom: 106px;
   }
 
   .example__text-wrap {

@@ -1,10 +1,11 @@
 .socials__list {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
-  padding: 20px 0;
+  padding: 20px 0 7px 0;
   border-top: 1px solid $font-color;
   border-bottom: 1px solid $font-color;
 }
@@ -12,11 +13,12 @@
 .socials__link {
   display: block;
   text-align: center;
-  height: 20px;
-  width: 40px;
   font-size: 0;
-  margin-right: 10px;
 }
+
+  .socials__item {
+    margin: 0 17px;
+  }
 
 .socials__svg {
   fill: $font-color;
@@ -37,30 +39,33 @@
   }
 
   .socials__list {
+    padding: 0;
     border: none;
     align-items: center;
   }
 
   .socials__item {
-    width: 50px;
-    height: 40px;
+    margin: 0 11px;
   }
 
   .socials__svg {
 
-    &--vk {
-    width: 40px;
-    height: 40px;
-    }
+    width: 28px;
+    height: 28px;
 
-    &--insta {
-    width: 30px;
-    height: 30px;
+    // &--vk {
+    // width: 40px;
+    // height: 40px;
+    // }
+
+    &--inst {
+    width: 22px;
+    height: 22px;
     }
 
     &--fb {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     }
   }
 }

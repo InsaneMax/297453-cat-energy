@@ -15,10 +15,11 @@
   &::after {
     content: "";
     position: absolute;
-    left: 40%;
-    top: 45%;
-    height: 53px;
-    width: 53px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
     background-image: url("../img/map-pin.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,10 +37,8 @@
     }
 
     &::after {
-      width: 95px;
-      height: 95px;
-      left: 43%;
-      top: 42%;
+      width: 122px;
+      height: 105px;
     }
   }
 }
@@ -56,8 +55,8 @@
     &::after {
       width: 100px;
       height: 100px;
-      left: 71.5%;
-      top: 43%;
+      left: 76%;
+      top: 50%;
     }
   }
 }

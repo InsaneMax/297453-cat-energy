@@ -14,10 +14,31 @@
   }
 }
 
-.logo--footer .logo__link {
-  padding: 40px 0 30px 0;
-}
-
 @media (min-width: $screen-md) {
 
+  .logo__img {
+
+    &--header {
+      width: 175px;
+    }
+
+    &--footer {
+      width: 134px;
+    }
+  }
 }
+
+@media (min-width: $screen-lg) {
+
+  .logo__img {
+
+    &--header {
+      width: 205px;
+    }
+  }
+
+  .logo--footer .logo__link img {
+    width: 130px;
+  }
+}
+
