@@ -19,10 +19,17 @@
 
 .copyright__svg {
   fill: $font-color;
+
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $screen-md) {
-
   .copyright {
     padding: 0;
   }

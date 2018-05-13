@@ -93,15 +93,15 @@
 }
 
 @media (min-width: $screen-md) {
-
   .example {
     background-color: #ffffff;
-    border-top: 1px solid #000;
+    border-top: 1px solid #000000;
   }
 
   .example__inner {
     width: auto;
   }
+
   .example__wrap {
     @include container();
     padding-bottom: 255px;
@@ -160,7 +160,7 @@
     text-align: center;
   }
 
-  .example__img  {
+  .example__img {
     width: 690px;
     margin-top: -280px;
     margin-bottom: 0;
@@ -180,7 +180,6 @@
 }
 
 @media (min-width: $screen-lg) {
-
   .example {
     padding: 30px;
     background-color: $gray;

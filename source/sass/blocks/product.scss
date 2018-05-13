@@ -1,6 +1,5 @@
 .product {
-  // padding: 5px 0 24px 0;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   min-height: 209px;
 }
 
@@ -19,7 +18,7 @@
     height: 30px;
     background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
-    background-position:  center;
+    background-position: center;
   }
 }
 
@@ -46,8 +45,8 @@
 }
 
 .product__table tbody td:nth-child(2n) {
-    text-align: right;
-  }
+  text-align: right;
+}
 
 .product__btn {
   width: 280px;
@@ -98,7 +97,6 @@
 }
 
 @media (min-width: $screen-md) {
-
   .product {
     position: relative;
     display: flex;
@@ -128,15 +126,16 @@
     margin-bottom: 25px;
   }
 
-.product__img-wrap {
-  position: absolute;
-  top: -50px;
-  width: 320px;
+  .product__img-wrap {
+    position: absolute;
+    top: -50px;
+    width: 320px;
 
-  &--lg {
-    top: -84px;
+    &--lg {
+      top: -84px;
+    }
   }
-}
+
   .product__title {
     width: 145px;
     margin: 0 auto;
@@ -147,25 +146,24 @@
   .product__link {
     font-size: $font-md;
     line-height: 1em;
-
   }
 
-.product__descr {
-  width: 250px;
-}
+  .product__descr {
+    width: 250px;
+  }
 
-.product__table {
-  font-size: $font-sm;
-  line-height: 1em;
-}
+  .product__table {
+    font-size: $font-sm;
+    line-height: 1em;
+  }
 
-.product__table tr {
-  border-bottom: 1px solid #000;
-}
+  .product__table tr {
+    border-bottom: 1px solid #000000;
+  }
 
-.product__table td {
-  padding: 8px 0;
-}
+  .product__table td {
+    padding: 8px 0;
+  }
 
   .product__more-link {
     display: block;
@@ -186,14 +184,12 @@
     color: $font-color;
   }
 
-    .product__btn {
-      width: 250px;
-    }
-
+  .product__btn {
+    width: 250px;
+  }
 }
 
 @media (min-width: $screen-lg) {
-
   .product {
     width: 245px;
     padding: 157px 0 40px 0;
@@ -204,7 +200,7 @@
     }
   }
 
-  .product__img-wrap  {
+  .product__img-wrap {
     width: 245px;
   }
 
@@ -215,8 +211,7 @@
 
   .product__descr {
     width: 170px;
-}
-
+  }
 
   .product__inner {
     width: 170px;

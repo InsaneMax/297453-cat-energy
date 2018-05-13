@@ -5,7 +5,7 @@
 
 .page-header__top {
   background-color: #ffffff;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   padding: 11px 0;
 }
 
@@ -36,7 +36,7 @@
   padding-bottom: 40px;
   margin-bottom: 196px;
 
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 
@@ -52,7 +52,7 @@
     background-repeat: no-repeat;
     background-size: 282px;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-can-mobile@2x.png");
     }
   }
@@ -64,7 +64,6 @@
 
 
 @media (min-width: $screen-md) {
-
   .page-header {
     margin-bottom: 15px;
   }
@@ -72,6 +71,7 @@
   .page-header__top {
     padding: 0;
     height: 100%;
+    border: none;
   }
 
   .page-header__inner {
@@ -80,10 +80,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 21px 0;
-  }
-
-  .page-header__top {
-    border: none;
   }
 
   .page-header__wrap-top {
@@ -115,7 +111,7 @@
       background-position: left;
       transform: translateX(-79px);
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-can-tablet@2x.jpg");
       }
     }
@@ -123,7 +119,6 @@
 }
 
 @media (min-width: $screen-lg) {
-
   .page-header {
     margin-bottom: 0;
   }
@@ -135,10 +130,9 @@
   .page-header--index {
     position: relative;
     margin-bottom: 74px;
-    // background: linear-gradient(to right, #fff 50% , #65a93c 50%);
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       z-index: -1;
       top: 0;
@@ -157,7 +151,7 @@
     padding: 0;
   }
 
-   .page-header__top {
+  .page-header__top {
     width: 642px;
     flex-shrink: 0;
   }
@@ -180,11 +174,10 @@
       height: 555px;
       bottom: -88px;
       left: 74%;
-      // right: -565px;
       background-image: url("../img/index-can-desktop@1x.png");
       background-size: 555px;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background-image: url("../img/index-can-desktop@2x.png");
       }
     }

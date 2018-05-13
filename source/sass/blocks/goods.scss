@@ -13,11 +13,10 @@
 }
 
 .goods__title-wrap {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
 }
 
 @media (min-width: $screen-md) {
-
   .goods__title {
     font-size: $height-lg;
     line-height: 1em;
@@ -40,7 +39,6 @@
 }
 
 @media (min-width: $screen-lg) {
-
   .goods__wrap {
     justify-content: flex-start;
     margin-bottom: 52px;

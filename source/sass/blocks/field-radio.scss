@@ -13,10 +13,9 @@
 .field-radio__input + .field-radio__label {
   position: relative;
   display: block;
-  padding-left: 60px;
   padding: 10px;
-  padding-left: 60px;
-  margin-bottom: 10px;
+  padding-left: 47px;
+  margin-bottom: 6px;
   box-sizing: border-box;
 
   &:active {
@@ -28,7 +27,7 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 4px;
+  top: 3px;
   width: 30px;
   height: 30px;
   border: 1px solid #d0d0d0;
@@ -43,7 +42,7 @@
   content: "";
   position: absolute;
   left: 9px;
-  top: 13px;
+  top: 12px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -52,10 +51,27 @@
 
 @media (min-width: $screen-md) {
   .field-radio__label {
-
-    &::last-child {
+    &:last-child {
       margin-bottom: 0;
     }
   }
-}
 
+  .field-radio__input + .field-radio__label {
+    padding: 11px;
+    padding-left: 68px;
+    margin-bottom: 10px;
+  }
+
+  .field-radio__input + .field-radio__label::before {
+    width: 38px;
+    height: 38px;
+    left: 8px;
+  }
+
+  .field-radio__input:checked + .field-radio__label::after {
+    width: 17px;
+    height: 17px;
+    left: 19.5px;
+    top: 14px;
+  }
+}

@@ -6,34 +6,23 @@
 
   &--contacts {
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 4px;
-      right: 8px;
-      width: 30px;
-      height: 30px;
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 20px;
-    }
-  }
-
-  &--tel::before {
-    background-image: url("../img/icon-phone.svg");
   }
 }
 
+.field-text__svg {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
 .field-text__label {
-  margin-right: 5px;
+  margin-right: 17px;
   flex-shrink: 0;
   text-transform: uppercase;
 }
 
 .field-text__input {
-  padding: 10px;
+  padding: 12px;
   flex-grow: 1;
   box-sizing: border-box;
   font-size: $font-sm;
@@ -47,43 +36,37 @@
   }
 
   &:focus {
-    border: 1px solid #000;
+    border: 1px solid #000000;
   }
-
-  // &:required {
-  //   border: 1px solid #ff8282;
-  // }
 
   &:invalid {
     border: 1px solid #ff8282;
     outline: 1px solid #ff8282;
   }
 
-  &--email {
-    padding-right: 30px;
-  }
-
-  &--tel {
-    padding-right: 30px;
+  &--contacts {
+    padding-right: 43px;
   }
 }
 
+.field-text__input:focus + .field-text__svg {
+  fill: $main-color;
+}
 
 @media (min-width: $screen-md) {
-
-  .field-text--contacts::before {
-    top: 11px;
-    right: 15px;
+  .field-text {
+    margin-bottom: 20px;
   }
 
   .field-text__input {
     flex-grow: 1;
     font-size: $font-md;
     line-height: 1em;
+    padding: 10px 15px;
   }
 
   .field-text__label {
-    margin-right: 25px;
+    margin-right: 20px;
   }
 }
 
@@ -92,7 +75,7 @@
     width: 570px;
 
     &:last-child {
-    margin-bottom: 0;
-  }
+      margin-bottom: 0;
+    }
   }
 }

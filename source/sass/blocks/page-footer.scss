@@ -13,13 +13,12 @@
 }
 
 @media (min-width: $screen-md) {
-
-.page-footer__inner {
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  padding: 52px 0;
-}
+  .page-footer__inner {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 52px 0;
+  }
 
   .page-footer__logo {
     padding: 0;
@@ -27,7 +26,6 @@
 }
 
 @media (min-width: $screen-lg) {
-
   .page-footer__inner {
     padding: 58px 0;
   }

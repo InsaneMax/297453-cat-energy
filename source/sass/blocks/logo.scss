@@ -15,9 +15,7 @@
 }
 
 @media (min-width: $screen-md) {
-
   .logo__img {
-
     &--header {
       width: 175px;
     }
@@ -29,9 +27,7 @@
 }
 
 @media (min-width: $screen-lg) {
-
   .logo__img {
-
     &--header {
       width: 205px;
     }
@@ -41,4 +37,3 @@
     width: 130px;
   }
 }
-

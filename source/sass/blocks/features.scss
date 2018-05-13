@@ -32,7 +32,6 @@
     background-image: url("../img/advantage-leaf@1x.png");
     background-position: center;
     background-repeat: no-repeat;
-    // background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-leaf@2x.png");
@@ -63,11 +62,9 @@
       background-image: url("../img/advantage-clock@2x.png");
     }
   }
-
 }
 
 @media (min-width: $screen-md) {
-
   .features {
     margin-bottom: 0;
   }
@@ -126,7 +123,6 @@
     &--fast::after {
       content: "4";
     }
-
   }
 
   .features__title {
@@ -144,7 +140,6 @@
 }
 
 @media (min-width: $screen-lg) {
-
   .features {
     padding-bottom: 148px;
   }
@@ -152,5 +147,4 @@
   .features__item {
     width: 245px;
   }
-
 }

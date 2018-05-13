@@ -1,5 +1,4 @@
 @media (min-width: $screen-lg) {
-
   .main-nav--index {
     width: 680px;
     height: 100%;
@@ -9,9 +8,8 @@
     background-size: contain;
     background-position: bottom;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)  {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 }
-

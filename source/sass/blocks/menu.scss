@@ -19,14 +19,13 @@
 }
 
 .menu__link[href] {
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-    &:hover {
-      color: rgba(0, 0, 0, 0.6);
-    }
-
-    &:active {
-      color: $font-active-dark;
-    }
+  &:active {
+    color: $font-active-dark;
+  }
 }
 
 @media (min-width: $screen-md) {
@@ -40,7 +39,6 @@
 
   .menu__item {
     margin-left: 23px;
-
   }
 
   .menu__item--active {
@@ -66,7 +64,6 @@
 }
 
 @media (min-width: $screen-lg) {
-
   .menu__item {
     margin-left: 30px;
     letter-spacing: 0.8px;
@@ -78,7 +75,7 @@
 
   .page-header--index .menu {
     flex-wrap: wrap;
-    margin-left:  95px;
+    margin-left: 95px;
     padding: 63px 0;
   }
 
@@ -91,7 +88,6 @@
   }
 
   .page-header--index .menu__link[href] {
-
     &:hover {
       color: rgba(255, 255, 255, 0.6);
     }

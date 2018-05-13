@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
   margin: 0;
   list-style: none;
   padding: 20px 0 7px 0;
@@ -16,9 +15,9 @@
   font-size: 0;
 }
 
-  .socials__item {
-    margin: 0 17px;
-  }
+.socials__item {
+  margin: 0 17px;
+}
 
 .socials__svg {
   fill: $font-color;
@@ -33,7 +32,6 @@
 }
 
 @media (min-width: $screen-md) {
-
   .socials {
     display: flex;
   }
@@ -53,19 +51,14 @@
     width: 28px;
     height: 28px;
 
-    // &--vk {
-    // width: 40px;
-    // height: 40px;
-    // }
-
     &--inst {
-    width: 22px;
-    height: 22px;
+      width: 22px;
+      height: 22px;
     }
 
     &--fb {
-    width: 26px;
-    height: 26px;
+      width: 26px;
+      height: 26px;
     }
   }
 }

@@ -9,20 +9,23 @@
   @include container();
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: $font-base;
   line-height: $height-base;
 }
 
 .form__data {
   padding: 10px;
+
   &--text {
     @include container();
   }
 
   &--radio {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 13px 0;
+    margin-bottom: 22px;
   }
 }
 
@@ -33,6 +36,7 @@
 .form__contacts {
   padding: 0;
   margin: 0;
+  margin-bottom: 14px;
 }
 
 .form__contacts-wrap {
@@ -46,33 +50,41 @@
   font-size: $font-lg;
   line-height: 1em;
   text-transform: none;
-
+  overflow-x: hidden;
+  margin: 0;
 
   &::after {
     content: "";
     position: absolute;
     z-index: -1;
-    top: 14px;
-    left: 0;
+    top: 15px;
+    left: 50%;
     width: 100%;
     height: 3px;
     background-color: $main-color;
+    transform: translateX(-140px);
   }
 }
 
 .form__subtitle-wrap {
+  display: block;
   @include container();
+  margin-bottom: 37px;
 }
 
-.form__subtitle-wrap span {
-  // display: block;
-  padding: 0 10px;
+.form__subtitle-box {
+  padding: 0;
+  padding-right: 10px;
   background-color: #ffffff;
+
+  &--block {
+    display: inline-block;
+    width: 72%;
+  }
 }
 
-.form-comment {
-    @include container();
-  padding: 10px 0;
+.form__comment {
+  margin-bottom: 25px;
 }
 
 .form__field {
@@ -90,6 +102,10 @@
   box-sizing: border-box;
 }
 
+.form__additions {
+  margin-bottom: 20px;
+}
+
 .form__additions-wrap {
   @include container();
 }
@@ -104,7 +120,7 @@
   border: none;
   font-size: $font-sm;
   line-height: $height-md;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .form__submit-tip {
@@ -112,12 +128,11 @@
   font-size: $font-base;
   line-height: 16px;
   color: $font-color;
-  margin-bottom: 20px;
+  margin-bottom: 33px;
   text-transform: none;
-  }
+}
 
 @media (min-width: $screen-md) {
-
   .form__data,
   .form__textarea,
   .form__contacts,
@@ -139,105 +154,143 @@
       width: auto;
       margin: 0;
       padding: 0;
+      margin-bottom: 53px;
     }
 
     &--radio {
       width: 100%;
       padding: 20px;
-      border: 1px solid #000;
+      border: 1px solid #000000;
       box-sizing: border-box;
+      margin-bottom: 0;
     }
   }
 
-  .form__data-container {
-    @include container();
+  .form__data-wrap {
+    width: auto;
+    margin: 0;
   }
 
+  .form__subtitle {
+    font-size: $font-xl;
+    line-height: 1em;
 
-.form__data-wrap {
-  width: auto;
-  margin: 0;
-}
+    &::after {
+      left: 0;
+      top: 23px;
+      transform: translate(0, 0);
+    }
+  }
 
-.form__subtitle {
-  font-size: $font-xl;
-  line-height: 1em;
-}
+  .form__subtitle-wrap {
+    margin-bottom: 78px;
+  }
 
-.form__contacts {
-  width: auto;
-  margin: 0 auto;
-}
+  .form__subtitle-box {
+    padding: 0 40px;
+  }
 
-// .form__contacts-wrap {
-//   @include container();
-// }
+  .form__subtitle-box--block {
+    width: 554px;
+  }
 
-// .form__comment {
-//   width: auto;
-//   margin: 0 auto;
-// }
+  .form__contacts {
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 45px;
+  }
 
-// .form__additions {
-//   width: auto;
-//   margin: 0 auto;
-// }
+  .form__contacts-wrap {
+    width: 630px;
+    margin: 0 auto;
+  }
 
-// .form__submit {
-//   width: auto;
-//   margin: 0 auto;
-// }
+  .form__field {
+    width: 630px;
+    margin: 0 auto;
+  }
 
-
-  .form__description {
+  .form__textarea {
+    width: 100%;
+    padding: 5px 20px;
     font-size: $font-md;
     line-height: 30px;
-    margin-bottom: 30px;
+    height: 170px;
+    border: 1px solid #000000;
+  }
+
+  .form__comment {
+    margin-bottom: 65px;
+  }
+
+  .form__description {
+    width: 630px;
+    margin: 0 auto;
+    font-size: $font-md;
+    line-height: 30px;
+    margin-bottom: 65px;
   }
 
   .form__description p {
     width: 350px;
   }
 
-  .form__textarea {
-    width: 100%;
-    padding: 15px;
-}
-
   .form__additions-wrap {
+    width: 630px;
+    margin: 0 auto;
     display: flex;
     min-height: 70px;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 60px;
+    margin-bottom: 0;
+  }
+
+  .form__additions .form__subtitle-wrap {
+    margin-bottom: 54px;
   }
 
   .form__submit {
+    width: 630px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 53px;
+  }
+
+  .form__submit-btn {
+    width: 280px;
+    padding: 15px 10px;
   }
 
   .form__submit-tip {
     display: block;
-    width: 50%;
+    width: 45%;
     font-size: $font-sm;
     line-height: 16px;
+    text-align: left;
   }
 
   .form__data-container {
+    width: 630px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 72px;
   }
-
 }
 
 @media (min-width: $screen-lg) {
-
-
   .form__data-container {
+    @include container();
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 63px;
+  }
+
+  .form__description {
+    @include container();
+    margin-bottom: 65px;
   }
 
   .form__data {
@@ -248,34 +301,66 @@
       flex-direction: column;
       justify-content: space-between;
       min-height: 200px;
+      margin-bottom: 0;
     }
   }
 
   .form__contacts-wrap {
+    @include container();
     display: flex;
     justify-content: space-between;
   }
 
-    .form__additions-wrap {
-      justify-content: flex-start;
-    }
+  .form__field {
+    @include container();
+  }
+
+  .form__additions {
+    margin-bottom: 30px;
+  }
+
+  .form__additions-wrap {
+    @include container();
+    justify-content: flex-start;
+  }
+
+  .form__additions .form__subtitle-wrap {
+    margin-bottom: 62px;
+  }
+
+  .form__submit {
+    @include container();
+    margin-bottom: 62px;
+  }
 
   .form__submit-btn {
     width: 570px;
   }
 
   .form__submit-tip {
-
+    width: 46%;
   }
 
   .form__subtitle {
-
     &::before {
-      left: -650px;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 23px;
+      left: -53%;
+      width: 100%;
+      height: 3px;
+      background-color: $main-color;
+      transform: translateX(-610px);
     }
 
     &::after {
-
+      left: 17%;
     }
+  }
+
+  .form__subtitle-box {
+    padding: 0;
+    padding-right: 40px;
   }
 }
