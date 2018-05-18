@@ -11,8 +11,8 @@
 
 .field-text__svg {
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 13px;
+  top: 13px;
 }
 
 .field-text__label {
@@ -20,6 +20,7 @@
   flex-shrink: 0;
   text-transform: uppercase;
 }
+
 
 .field-text__input {
   padding: 12px;
@@ -41,13 +42,22 @@
 
   &:invalid {
     border: 1px solid #ff8282;
-    outline: 1px solid #ff8282;
   }
 
   &--contacts {
-    padding-right: 43px;
+    padding-right: 20px;
   }
 }
+
+// стили для состояния ERROR
+
+// .field-text--error .field-text__input {
+//     border: 1px solid #ff8282;
+// }
+
+// .field-text--error .field-text__svg {
+//   fill: #ff8282;
+// }
 
 .field-text__input:focus + .field-text__svg {
   fill: $main-color;

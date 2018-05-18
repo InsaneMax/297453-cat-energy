@@ -22,8 +22,8 @@
   }
 
   &--radio {
-    border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
     padding: 13px 0;
     margin-bottom: 22px;
   }
@@ -67,8 +67,8 @@
 }
 
 .form__subtitle-wrap {
-  display: block;
   @include container();
+  display: block;
   margin-bottom: 37px;
 }
 
@@ -160,7 +160,7 @@
     &--radio {
       width: 100%;
       padding: 20px;
-      border: 1px solid #000000;
+      border: 1px solid #cdcdcd;
       box-sizing: border-box;
       margin-bottom: 0;
     }
@@ -216,7 +216,7 @@
     font-size: $font-md;
     line-height: 30px;
     height: 170px;
-    border: 1px solid #000000;
+    border: 1px solid #cdcdcd;
   }
 
   .form__comment {
@@ -355,7 +355,7 @@
     }
 
     &::after {
-      left: 17%;
+      left: 20%;
     }
   }
 

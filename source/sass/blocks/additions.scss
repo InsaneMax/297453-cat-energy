@@ -23,6 +23,7 @@
 
 .additions__title-inner {
   @include container();
+  display: block;
 }
 
 .additions__title-box {
@@ -40,10 +41,10 @@
 
 .additions__product {
   padding: 11px 0 19px 0;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #cdcdcd;
 
   &:first-child {
-    border-top: 1px solid #000000;
+    border-top: 1px solid #cdcdcd;
   }
 }
 
@@ -87,7 +88,7 @@
   }
 
   .additions__product {
-    border: 1px solid #000000;
+    border: 1px solid #cdcdcd;
     padding: 27px 0 28px 0;
     margin-bottom: -1px;
   }
@@ -176,7 +177,7 @@
     width: auto;
     padding: 17px 0 16px 0;
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #cdcdcd;
     margin-bottom: 0;
   }
 
